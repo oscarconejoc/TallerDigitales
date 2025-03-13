@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje2/Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje2/TopEje2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopEje2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje2/TB_Eje2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_Eje2

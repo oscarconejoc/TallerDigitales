@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje1/Deco.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deco
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje1/TopEje1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopEje1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sdany/OneDrive/Documents/Eje1/TB_Eje1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_Eje1
