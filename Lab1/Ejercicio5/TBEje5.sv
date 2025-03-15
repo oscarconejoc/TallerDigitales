@@ -62,15 +62,19 @@ module TBEje5 ();
 
         #50
         ALUControl = 4'h6;
+        ALUFlagIn = 0;
 
         #50
         ALUControl = 4'h7;
+        ALUFlagIn = 0;
 
         #50
         ALUControl = 4'h8;
+        ALUFlagIn = 0;
 
         #50
         ALUControl = 4'h9;
+        ALUFlagIn = 0;
 
 
     end

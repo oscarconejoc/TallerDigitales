@@ -17,7 +17,7 @@ module ALU # (parameter Ancho = 8)(
             end
             4'h2: begin //suma
                 logic [Ancho:0] temp_sum; 
-                assign temp_sum = A + B;
+                assign temp_sum = A + B + ALUFlagIn;
                 assign ALUResult = temp_sum[Ancho-1:0]; 
                 assign ALUFlags = temp_sum[Ancho]; 
             end
@@ -46,7 +46,7 @@ module ALU # (parameter Ancho = 8)(
                 end
             end
             4'h6: begin //resta
-                assign {ALUFlags, ALUResult} = A - B;
+                assign {ALUFlags, ALUResult} = A - B - ALUFlagIn;
             end
             4'h7: begin //xor
                 assign ALUResult = A ^ B;

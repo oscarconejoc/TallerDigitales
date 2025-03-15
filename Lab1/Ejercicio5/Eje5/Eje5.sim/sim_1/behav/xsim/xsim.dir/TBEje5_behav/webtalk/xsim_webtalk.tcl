@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sat Mar 15 14:27:52 2025" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sat Mar 15 14:48:41 2025" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2552052" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "6cc18e37-9d26-4e33-9886-10b8704eef8a" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "92c4dfb504984b28846d843adcf614e9" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "10" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "14" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 5 5600X 6-Core Processor             " -context "user_environment"
@@ -27,6 +27,6 @@ webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7524_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3272001753 -regid "" -xml C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7520_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 167289585 -regid "" -xml C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/XPC/Desktop/TallerDigitales/Lab1/Ejercicio5/Eje5/Eje5.sim/sim_1/behav/xsim/xsim.dir/TBEje5_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
