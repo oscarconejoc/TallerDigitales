@@ -13,14 +13,8 @@ module Deco(
     output      logic l3,
     output      logic l4
 );
-//assign boton = ~boton;
 
 always_comb begin : deco
-    /*assign l1 = s1 && ~boton;
-    assign l2 = s2 && ~boton;
-    assign l3 = s3 && ~boton;
-    assign l4 = s4 && ~boton;*/
-    
     l1 = s1 && ~boton;
     l2 = s2 && ~boton;
     l3 = s3 && ~boton;
@@ -29,3 +23,6 @@ end
 
     
 endmodule
+
+
+
