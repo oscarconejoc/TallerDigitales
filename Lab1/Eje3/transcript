@@ -1,0 +1,17 @@
+# vsim -c -voptargs="+acc" work.Deco_tb -do "add wave *; run 100ns; quit -f" 
+# Start time: 16:31:10 on Mar 17,2025
+# Loading sv_std.std
+# Loading work.Deco_tb
+# Loading work.TOP
+# Loading work.MUX
+# Loading work.DECO
+# add wave *
+#  run 100ns
+# _________________________________________________
+# El numero seleccionado corresponde a: 1101101
+# _________________________________________________
+# El valoooooooor de la activación es de: 1
+# _________________________________________________
+#  quit -f
+# End time: 16:31:10 on Mar 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

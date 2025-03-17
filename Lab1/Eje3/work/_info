@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/juanp/OneDrive/Documentos/TEC/XISemestre/Digitales/Proyecto1/Codigo/Eje3
+vDECO
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1742250669
+!i10b 1
+!s100 MLLADHMQ>><LnEB2Kh7;f0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4:i7f[SADH4H:afX1Sh233
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1741917135
+Z6 8Deco.sv
+Z7 FDeco.sv
+!i122 1
+L0 52 22
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1742250669.000000
+!s107 Deco.sv|Deco_tb.sv|
+Z10 !s90 -sv|Deco_tb.sv|Deco.sv|
+!i113 1
+o-sv
+Z11 tCvgOpt 0
+n@d@e@c@o
+vDeco_tb
+R1
+R2
+!i10b 1
+!s100 6OlFm5K`I9iQjmNU<6K_m3
+R3
+IUQB=W_?V7G_W4HB@lYUkG1
+R4
+S1
+R0
+w1742250665
+8Deco_tb.sv
+FDeco_tb.sv
+!i122 1
+L0 2 43
+R8
+r1
+!s85 0
+31
+R9
+Z12 !s107 Deco.sv|Deco_tb.sv|
+R10
+!i113 1
+o-sv
+R11
+n@deco_tb
+vMUX
+R1
+R2
+!i10b 1
+!s100 SGlOXPM4VG3G9ILm0ARZI3
+R3
+ITcNHS?1b;o;P8kj>9G:PE2
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 1
+L0 30 20
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+n@m@u@x
+vTOP
+R1
+R2
+!i10b 1
+!s100 LlM<7kczQ1AERn8`hnbl50
+R3
+I4_k[05lMACZXYbe8CebTH0
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 1
+L0 2 27
+R8
+r1
+!s85 0
+31
+R9
+R12
+R10
+!i113 1
+o-sv
+R11
+n@t@o@p
