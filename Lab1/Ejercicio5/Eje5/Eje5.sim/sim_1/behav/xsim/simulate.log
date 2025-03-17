@@ -1,2 +1,14 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
+Prueba 1: Desplazamiento a la izquierda
+  A = 0110, B = 0010, Operación = 8, ResultadoALU = 0011, Cero = 0
+Prueba 2: Desplazamiento a la derecha
+  A = 1000, B = 0010, Operación = 9, ResultadoALU = 0101, Cero = 0
+Prueba 3: Desplazamiento a la izquierda con B = 0
+  A = 1010, B = 0000, Operación = 8, ResultadoALU = 1001, Cero = 0
+Prueba 4: Desplazamiento a la derecha con B = 0
+  A = 1010, B = 0000, Operación = 9, ResultadoALU = 1001, Cero = 0
+Prueba 5: Desplazamiento a la izquierda con B > 3
+  A = 0001, B = 0010, Operación = 8, ResultadoALU = 1110, Cero = 0
+Prueba 6: Desplazamiento a la derecha con B > 3
+  A = 1000, B = 0010, Operación = 9, ResultadoALU = 0101, Cero = 0

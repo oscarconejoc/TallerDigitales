@@ -1,4 +1,4 @@
-module ALU # (parameter Ancho = 8)(
+module ALU # (parameter Ancho = 4)(
     input    logic [Ancho-1:0]  A,
     input    logic [Ancho-1:0]  B,
     input    logic [3:0]        ALUControl,
@@ -52,10 +52,23 @@ module ALU # (parameter Ancho = 8)(
                 assign ALUResult = A ^ B;
             end
             4'h8: begin //corriemiento Izquierda
-                assign ALUResult = A << B;
+                logic [Ancho - 1:0] resul_ci;
+                logic carry_o;
+                    
+                resul_ci = A << B;
+                carry_o = A >> (B - 1);
+                
+                ALUResult = resul_ci;
             end
-            4'h8: begin //corriemiento Derecha
-                assign ALUResult = A >> B;
+            
+            4'h9: begin //corriemiento Derecha
+                logic [Ancho - 1:0] resul_cd;
+                logic carry_o;
+                
+                resul_cd = A >> B;
+                carry_o = A[Ancho - 1];
+                
+                ALUResult = resul_cd;
             end
             default: begin
                 assign ALUResult = 4'b1111;
