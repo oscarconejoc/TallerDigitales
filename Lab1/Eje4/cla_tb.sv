@@ -2,20 +2,19 @@
 
 module cla_tb;
 
-   // Par醡etros
+    // Par谩metros
     parameter n = 8;
-    
-    // Se馻les de entrada
+
+    // Se帽ales de entrada
     logic [n-1:0] A, B;
     logic Cin;
 
-    // Se馻les de salida
+    // Se帽ales de salida
     logic [n:0] S;
     logic Cout;
     logic [n:0] SUM;
 
-    
-    // Instancia del m骴ulo cla
+    // Instancia del m贸dulo cla
     cla #(.Ancho(n)) dut (
         .A(A),
         .B(B),
@@ -23,16 +22,17 @@ module cla_tb;
         .S(S),
         .Cout(Cout)
     );
-    
-    // Inicializaci髇 de la simulaci髇
+
+    // Inicializaci贸n de la simulaci贸n
     initial begin
         $dumpfile("cla_tb.vcd");
         $dumpvars(0, cla_tb);
     end
-    
-     integer i, j, k;
-     initial begin 
-        // Generaci髇 de est韒ulos
+
+    // Generaci贸n de est铆mulos
+    integer i, j, k;
+    initial begin
+//        logic [n:0] SUM; // Declaraci贸n de SUM fuera del bucle
      for (i = 0; i < 2**n; i = i + 1) begin
             for (j = 0; j < 2**n; j = j + 1) begin
                 for (k = 0; k < 2; k = k + 1) begin
@@ -50,5 +50,6 @@ module cla_tb;
         end
         $finish;
     end
+
 
 endmodule
