@@ -2,5 +2,6 @@
 2019.1
 May 24 2019
 15:06:07
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_Registros.sv,1743107939,systemVerilog,,,,Banco_Registros,,,,,,,,
+C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_Registros.sv,1743107939,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_TB.sv,,Banco_Registros,,,,,,,,
+C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_TB.sv,1743108776,systemVerilog,,,,BancoTB,,,,,,,,
 C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Eje4/Eje4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

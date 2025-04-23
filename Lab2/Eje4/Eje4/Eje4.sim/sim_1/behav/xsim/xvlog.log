@@ -1,2 +1,2 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Banco_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BancoTB
