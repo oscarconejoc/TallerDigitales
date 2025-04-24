@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 23 18:09:29 2025
+# Process ID: 756
+# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje4/Eje4/Eje4.runs/synth_1
+# Command line: vivado.exe -log Banco_Registros.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Banco_Registros.tcl
+# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje4/Eje4/Eje4.runs/synth_1/Banco_Registros.vds
+# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje4/Eje4/Eje4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Banco_Registros.tcl -notrace

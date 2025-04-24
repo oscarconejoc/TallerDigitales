@@ -42,25 +42,32 @@ module BancoTB ();
         data_in = 16'b0000000000000000;
         WE = 0;
 
-        #10;
+        #50;
 
         rst = 1;
-        #10;
+        #50;
 
         rst = 0;
         WE = 1;
-        for (int i = 0; i<=255 ; i = i + 1 ) begin
-            addr_rs1 = i;
-            addr_rs2 = i;
-            data_in = $urandom();
-            #10;
+        for (int i = 0; i<15 ; i = i + 1 ) begin
+            addr_rd = i;
+            data_in = i;
+            #50;
         end
-        #10;
+        #50;
 
         WE = 0;
-        for (int j = 0; j<=255 ; j = j+1 ) begin
-            addr_rd = $urandom();
-            #10;
+        for (int j = 0; j<15 ; j = j+1 ) begin
+            addr_rs1 = $urandom_range(0, 15);
+            #50;
+        end
+        
+        #50;
+
+        WE = 0;
+        for (int k = 0; k<15 ; k = k+1 ) begin
+            addr_rs2 = $urandom_range(0, 15);
+            #50;
         end
     end
 

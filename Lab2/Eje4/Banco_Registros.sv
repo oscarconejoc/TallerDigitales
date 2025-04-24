@@ -14,24 +14,24 @@ module Banco_Registros #(parameter N = 8, parameter W = 8)(
 
 );
     
-    logic [N-1:0] mem [N-1];
+    logic [N-1:0] mem [W-1];
 
     // Borrado sincronico del banco de registros
     always_ff @(posedge clk or posedge rst) begin
-        if (rst) begin
-            for (int i = 0; i < 32; i++) begin
+        if (rst == 1) begin
+            for (int i = 0; i < N-1; i++) begin
                 mem[i] <= 0;
             end
         end
-        else if (WE) begin
+        else if (WE == 1) begin
             mem[addr_rd] <= data_in;
         end
     end
 
     //Escritura secuencial del banco de registros
-    always_ff @(posedge clk) begin
-        if (WE) mem[addr_rd] <= data_in;
-    end
+//    always_ff @(posedge clk) begin
+//        if (WE == 1) mem[addr_rd] <= data_in;
+//    end
     
     //Lectura combinacional del banco de registro
     assign rs1 = (addr_rs1 == 0) ? 0 : mem[addr_rs1];
