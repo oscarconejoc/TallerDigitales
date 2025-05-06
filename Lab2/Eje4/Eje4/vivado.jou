@@ -2,34 +2,29 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Mar 27 14:49:10 2025
-# Process ID: 2164
+# Start of session at: Tue May  6 13:35:35 2025
+# Process ID: 30756
 # Current directory: C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Eje4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26432 C:\Users\Oscar\Desktop\TallerDigitales\Lab2\Eje4\Eje4\Eje4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28592 C:\Users\Oscar\Desktop\TallerDigitales\Lab2\Eje4\Eje4\Eje4.xpr
 # Log file: C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Eje4/vivado.log
 # Journal file: C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Eje4\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje4/Eje4/Eje4.xpr
 update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Banco_Registros [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
 launch_simulation
-source Banco_Registros.tcl
+source BancoTB.tcl
 close_sim
 launch_simulation
-source Banco_Registros.tcl
+source BancoTB.tcl
+relaunch_sim
 close_sim
 launch_simulation
-source Banco_Registros.tcl
-set_property top BancoTB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
+source BancoTB.tcl
+relaunch_sim
+close_sim
 launch_simulation
-launch_simulation
+source BancoTB.tcl
 close_sim
 launch_simulation
 source BancoTB.tcl

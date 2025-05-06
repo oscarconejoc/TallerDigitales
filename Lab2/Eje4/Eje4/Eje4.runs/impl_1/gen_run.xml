@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1745453421">
-  <File Type="BITSTR-BMM" Name="Banco_Registros_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Banco_Registros_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Banco_Registros_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Banco_Registros_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Banco_Registros.tcl"/>
-  <File Type="OPT-TIMING" Name="Banco_Registros_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Banco_Registros_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Banco_Registros_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="Banco_Registros_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Banco_Registros_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Banco_Registros_opt.dcp"/>
   <File Type="OPT-DRC" Name="Banco_Registros_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Banco_Registros.hwdef"/>
   <File Type="PWROPT-DCP" Name="Banco_Registros_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Banco_Registros_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Banco_Registros_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Banco_Registros_placed.dcp"/>
   <File Type="PLACE-IO" Name="Banco_Registros_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Banco_Registros_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Banco_Registros_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Banco_Registros_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Banco_Registros_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Banco_Registros_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Banco_Registros_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Banco_Registros.bgn"/>
-  <File Type="PLACE-TIMING" Name="Banco_Registros_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Banco_Registros_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Banco_Registros.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Banco_Registros_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Banco_Registros_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Banco_Registros_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Banco_Registros.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Banco_Registros_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Banco_Registros_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Banco_Registros_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Banco_Registros_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Banco_Registros_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Banco_Registros_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Banco_Registros.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Banco_Registros_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Banco_Registros.mmi"/>
+  <File Type="BITSTR-LTX" Name="Banco_Registros.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Banco_Registros_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Banco_Registros.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Banco_Registros_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Banco_Registros.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Banco_Registros_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Banco_Registros.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="Banco_Registros_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Banco_Registros_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Banco_Registros_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Banco_Registros_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Banco_Registros_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Banco_Registros_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Banco_Registros_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Banco_Registros_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Banco_Registros_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Banco_Registros_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Banco_Registros_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Banco_Registros_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Banco_Registros_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Banco_Registros_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Banco_Registros_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Banco_Registros_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Banco_Registros_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Banco_Registros_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Banco_Registros.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Banco_Registros_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Banco_Registros.rbt"/>
   <File Type="BITSTR-NKY" Name="Banco_Registros.nky"/>
   <File Type="BG-DRC" Name="Banco_Registros.drc"/>
@@ -104,9 +85,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

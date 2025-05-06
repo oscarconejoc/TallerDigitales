@@ -1,12 +1,12 @@
 //Lab 2 Ejercicio 4: Banco de Registros
 //Oscar Conejo
 
-module Banco_Registros #(parameter N = 8, parameter W = 8)(
+module Banco_Registros #(parameter N = 8, parameter W = 8)( //senales de entrada y salida del modulo
     input  logic                  clk,
     input  logic                  rst,
-    input  logic        [N-1:0]   addr_rs1,
-    input  logic        [N-1:0]   addr_rs2,
-    input  logic        [N-1:0]   addr_rd,
+    input  logic        [7:0]   addr_rs1,
+    input  logic        [7:0]   addr_rs2,
+    input  logic        [7:0]   addr_rd,
     input  logic        [W-1:0]   data_in,
     input  logic                  WE,
     output logic        [W-1:0]   rs1,
@@ -14,17 +14,17 @@ module Banco_Registros #(parameter N = 8, parameter W = 8)(
 
 );
     
-    logic [N-1:0] mem [W-1];
+    logic [W-1:0] mem [N]; //arreglo de memoria parametrizable
 
     // Borrado sincronico del banco de registros
     always_ff @(posedge clk or posedge rst) begin
-        if (rst == 1) begin
-            for (int i = 0; i < N-1; i++) begin
+        if (rst == 1) begin //se enciende cuando el rst esta en 1
+            for (int i = 0; i < N-1; i++) begin //borra todos los estados de memoria llenandolos de 0
                 mem[i] <= 0;
             end
         end
-        else if (WE == 1) begin
-            mem[addr_rd] <= data_in;
+        else if (WE == 1) begin // si se habilita la escritura
+            mem[addr_rd] <= data_in; //Escribe el dato de entrada en la direccion asignada
         end
     end
 
@@ -34,7 +34,7 @@ module Banco_Registros #(parameter N = 8, parameter W = 8)(
 //    end
     
     //Lectura combinacional del banco de registro
-    assign rs1 = (addr_rs1 == 0) ? 0 : mem[addr_rs1];
-    assign rs2 = (addr_rs2 == 0) ? 0 : mem[addr_rs2];
+    assign rs1 = (addr_rs1 == 0) ? 0 : mem[addr_rs1]; //Si la direccion es 0. brinda un valor de 0 en la lectura
+    assign rs2 = (addr_rs2 == 0) ? 0 : mem[addr_rs2]; //En caso de no ser 0 brinda el dato en la direccion solicitada
 
 endmodule

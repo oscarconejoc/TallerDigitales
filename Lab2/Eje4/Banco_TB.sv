@@ -5,9 +5,9 @@
 
 
 module BancoTB ();
-    logic                  clk;
-    logic                  rst;
-    logic        [7:0]     addr_rs1;
+    logic                  clk;         
+    logic                  rst;         
+    logic        [7:0]     addr_rs1;    
     logic        [7:0]     addr_rs2;
     logic        [7:0]     addr_rd;
     logic        [15:0]    data_in;
@@ -16,7 +16,7 @@ module BancoTB ();
     logic        [15:0]    rs2;
 
     //Instancia del modulo
-    Banco_Registros #(.N(8), .W(16)) Banco1 (
+    Banco_Registros #(.N(256), .W(16)) Banco1 (
         .clk(clk),
         .rst(rst),
         .addr_rs1(addr_rs1),
@@ -28,12 +28,12 @@ module BancoTB ();
         .rs2(rs2)
     );
 
-    always begin
+    always begin //Instancia del reloj
             #10;
             clk = ~clk;
         end
 
-    initial begin
+    initial begin //se comienza con todas las entradas en 0
         clk = 0;
         rst = 0;
         addr_rs1 = 8'b00000000;
@@ -44,27 +44,27 @@ module BancoTB ();
 
         #50;
 
-        rst = 1;
+        rst = 1; //Se hace el borrado de la memoria
         #50;
 
         rst = 0;
-        WE = 1;
-        for (int i = 0; i<15 ; i = i + 1 ) begin
+        WE = 1;//Se habilita la lectura
+        for (int i = 0; i<15 ; i = i + 1 ) begin //Se hace la escritura en los primeros 16 registros
             addr_rd = i;
-            data_in = i;
+            data_in = $urandom; //Dato aleatorio
             #50;
         end
         #50;
 
-        WE = 0;
-        for (int j = 0; j<15 ; j = j+1 ) begin
-            addr_rs1 = $urandom_range(0, 15);
+        WE = 0; //Se desactiva la escritura
+        for (int j = 0; j<15 ; j = j+1 ) begin //Se hacen 16 lecturas
+            addr_rs1 = $urandom_range(0, 15); //Se lee en posiciones aleatorias
             #50;
         end
         
         #50;
 
-        WE = 0;
+        WE = 0; //Se repite lo anterior pero para el segundo canal
         for (int k = 0; k<15 ; k = k+1 ) begin
             addr_rs2 = $urandom_range(0, 15);
             #50;
