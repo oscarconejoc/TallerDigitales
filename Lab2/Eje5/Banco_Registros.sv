@@ -1,12 +1,12 @@
-//Lab 2 Ejercicio 4: Banco de Registros
+//Lab 2 Ejercicio 5
 //Oscar Conejo
 
-module Banco_Registros #(parameter N = 8, parameter W = 8)( //senales de entrada y salida del modulo
+module Banco_Registros #(parameter N = 32, parameter W = 16)( //senales de entrada y salida del modulo
     input  logic                  clk,
     input  logic                  rst,
-    input  logic        [7:0]   addr_rs1,
-    input  logic        [7:0]   addr_rs2,
-    input  logic        [7:0]   addr_rd,
+    input  logic        [4:0]   addr_rs1,
+    input  logic        [4:0]   addr_rs2,
+    input  logic        [4:0]   addr_rd,
     input  logic        [W-1:0]   data_in,
     input  logic                  WE,
     output logic        [W-1:0]   rs1,
