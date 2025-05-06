@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  5 11:29:42 2025
+# Process ID: 22716
+# Current directory: C:/Users/sdany/OneDrive/Documents/TallerDigitales/SystemVerilog/CntrlUnit/CntrlUnit.runs/synth_1
+# Command line: vivado.exe -log control_unit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_unit.tcl
+# Log file: C:/Users/sdany/OneDrive/Documents/TallerDigitales/SystemVerilog/CntrlUnit/CntrlUnit.runs/synth_1/control_unit.vds
+# Journal file: C:/Users/sdany/OneDrive/Documents/TallerDigitales/SystemVerilog/CntrlUnit/CntrlUnit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source control_unit.tcl -notrace
