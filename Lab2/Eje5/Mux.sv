@@ -1,8 +1,8 @@
 module mux (
-    input   logic       [7:0]   A,
-    input   logic       [7:0]   B,
+    input   logic       [15:0]   A,
+    input   logic       [15:0]   B,
     input   logic               sel,
-    output  logic       [7:0]   out
+    output  logic       [15:0]   out
 );
     case (sel)
         1'b0: begin

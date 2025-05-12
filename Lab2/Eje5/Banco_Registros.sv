@@ -7,14 +7,14 @@ module Banco_Registros #(parameter N = 32, parameter W = 16)( //senales de entra
     input  logic        [4:0]   addr_rs1,
     input  logic        [4:0]   addr_rs2,
     input  logic        [4:0]   addr_rd,
-    input  logic        [W-1:0]   data_in,
+    input  logic        [15:0]   data_in,
     input  logic                  WE,
-    output logic        [W-1:0]   rs1,
-    output logic        [W-1:0]   rs2
+    output logic        [15:0]   rs1,
+    output logic        [15:0]   rs2
 
 );
     
-    logic [W-1:0] mem [N]; //arreglo de memoria parametrizable
+    logic [15:0] mem [32]; //arreglo de memoria parametrizable
 
     // Borrado sincronico del banco de registros
     always_ff @(posedge clk or posedge rst) begin
