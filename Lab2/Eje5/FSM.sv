@@ -1,7 +1,6 @@
 module fsm_mealy #(parameter int N_OPS = 10)(
     input logic         clk,
     input logic         rst_n,         // reset activo en bajo
-    input logic     [1:0]        switches,
     input logic     [3:0]        ALUbotones,  
     input logic                  CambioModo,   
     output logic                 muxctrl,
@@ -12,15 +11,16 @@ module fsm_mealy #(parameter int N_OPS = 10)(
     output logic    [4:0]        addr_rs1,
     output logic    [4:0]        addr_rs2,
     output logic    [1:0]        aluctrl,
-    output logic    [1:0]        displayctrl    
+    output logic                 displayctrl    
 );
 
     // Definición de estados
     typedef enum logic [2:0] {
-        estado1    = 2'b00,
-        estado2    = 2'b01,
-        estado3    = 2'b10,
-        estado4    = 2'b11,
+        estado1    = 3'b000,
+        estado2    = 3'b001,
+        estado3    = 3'b010,
+        estado4    = 3'b011,
+        estado5    = 3'b100    
     } state_t;
 
     state_t current_state, next_state;
@@ -42,7 +42,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
 
         end else begin
 
-            if (current_state == STATE_3 && next_state == STATE_4) begin
+            if (current_state == estado4 && next_state == estado1) begin
                 if (op_counter < N_OPS)
                     op_counter <= op_counter + 1'b1;
                 else
@@ -83,15 +83,31 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 end
             end
             estado4: begin
+                if (CambioModo) begin
+                    next_state = estado5;
+                end else begin
+                    next_state = estado1;
+                end
+            end
+            estado5: begin
                 next_state = estado1;
             end
+            
         endcase
     end
 
     // Lógica de salida
     always_comb begin
         // valor por defecto
-        out_signal = 1'b0;
+        muxctrl = 0;
+        WEreg   = 0;
+        WElfsr  = 0;
+        LEDs    = 6'b000000;
+        addr_rd = 5'b00000;
+        addr_rs1 = 5'b00000;
+        addr_rs2 = 5'b00000;
+        aluctrl  = 2'b00;
+        displayctrl = 0;
         case (current_state)
             estado1: begin
                 if (step == 0) begin
@@ -154,7 +170,6 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 WEreg = 0;
             end
                 
-            end
         endcase
     end
 

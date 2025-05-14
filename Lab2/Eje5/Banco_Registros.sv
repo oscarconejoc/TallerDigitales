@@ -18,7 +18,7 @@ module Banco_Registros #(parameter N = 32, parameter W = 16)( //senales de entra
 
     // Borrado sincronico del banco de registros
     always_ff @(posedge clk or posedge rst) begin
-        if (rst == 1) begin //se enciende cuando el rst esta en 1
+        if (rst == 0) begin //se enciende cuando el rst esta en 1
             for (int i = 0; i < N-1; i++) begin //borra todos los estados de memoria llenandolos de 0
                 mem[i] <= 0;
             end

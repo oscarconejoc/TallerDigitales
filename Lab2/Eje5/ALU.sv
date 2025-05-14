@@ -7,19 +7,19 @@ module ALU (
     always_comb begin  
         case (ALUControl)
             2'b00: begin //and
-                assign ALUResult = A & B;
+                ALUResult = A & B;
             end
             2'b01: begin //or
-                assign ALUResult = A | B;
+                ALUResult = A | B;
             end
             2'b10: begin //suma
-                assign ALUResult = A + B;
+                ALUResult = A + B;
             end
             2'b11: begin //resta
-                assign ALUResult = A - B;
+                ALUResult = A - B;
             end
             default: begin
-                assign ALUResult = 7'b1111111;
+                ALUResult = 7'b1111111;
             end
         endcase
 

@@ -4,14 +4,16 @@ module mux (
     input   logic               sel,
     output  logic       [15:0]   out
 );
+always_comb begin
     case (sel)
         1'b0: begin
-            out = A;
+            assign out = A;
         end
 
         1'b1: begin
-            out = B;
+            assign out = B;
         end
-        default: out = A
+        default: assign out = A;
     endcase
+end
 endmodule
