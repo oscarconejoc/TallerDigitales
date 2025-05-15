@@ -29,15 +29,15 @@ module fsm_mealy #(parameter int N_OPS = 10)(
     logic [4:0] op_counter;   // Contador de operaciones realizadas (0 a 30)
 
     // Registro de estado (secuencia)
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
+    always_ff @(posedge clk) begin
+        if (rst_n == 0)
             current_state <= estado1;
         else
             current_state <= next_state;
     end
 
     always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+        if (rst_n == 0) begin
             op_counter <= '0;    // Reiniciar contador de operaciones
 
         end else begin
@@ -54,7 +54,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
 
     // Registro del paso interno
     always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
+        if (rst_n == 0)
             step <= 0;
         else if (current_state == estado1)
             step <= ~step;  // alterna entre 0 y 1 cada ciclo en S1
@@ -108,7 +108,19 @@ module fsm_mealy #(parameter int N_OPS = 10)(
         addr_rs2 = 5'b00000;
         aluctrl  = 2'b00;
         displayctrl = 0;
-        case (current_state)
+
+        if (rst_n == 0) begin
+            muxctrl = 0;
+            WEreg   = 0;
+            WElfsr  = 0;
+            LEDs    = 6'b000000;
+            addr_rd = 5'b00000;
+            addr_rs1 = 5'b00000;
+            addr_rs2 = 5'b00000;
+            aluctrl  = 2'b00;
+            displayctrl = 0;
+        end else begin
+            case (current_state)
             estado1: begin
                 if (step == 0) begin
                     WElfsr = 1;
@@ -171,6 +183,8 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             end
                 
         endcase
+        end
+        
     end
 
 endmodule

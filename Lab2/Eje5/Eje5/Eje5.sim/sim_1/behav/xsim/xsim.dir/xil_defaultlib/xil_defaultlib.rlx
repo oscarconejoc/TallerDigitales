@@ -2,11 +2,11 @@
 2019.1
 May 24 2019
 15:06:07
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv,1747167134,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,,ALU,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,1747167804,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,,Banco_Registros,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1747168453,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,1747167134,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,,Generator,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,1747168407,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,,mux,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,1747168361,systemVerilog,,C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv,,TopFSM,,,,,,,,
-C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv,1747168427,systemVerilog,,,,Top_TB,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv,1747264296,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,,ALU,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,1747264296,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,,Banco_Registros,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/glbl.v,1747264296,verilog,,,,glbl,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1747268769,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,1747264296,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,,Generator,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,1747264296,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,,mux,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,1747264649,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv,,TopFSM,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv,1747268280,systemVerilog,,,,Top_TB,,,,,,,,

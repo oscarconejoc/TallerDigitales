@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Banco_Registros
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_mealy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopFSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_TB

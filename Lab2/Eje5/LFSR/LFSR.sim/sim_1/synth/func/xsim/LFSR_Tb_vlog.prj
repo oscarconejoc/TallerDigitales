@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"LFSR_Tb_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../../../../../U/Digitales/Lab2/Eje5/lfsr/LFSR_TB.sv" \
+
+# Do not sort compile order
+nosort

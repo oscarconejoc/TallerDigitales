@@ -2,25 +2,25 @@ module TopFSM (
     input logic clk,
     input logic rst,
     input logic [3:0] ALUbotones,
-    input logic CambioModo
+    input logic CambioModo,
+    output logic muxctrl,
+    output logic WEreg,
+    output logic WElfsr,
+    output logic [4:0] addr_rd,
+    output logic [4:0] addr_rs1,
+    output logic [4:0] addr_rs2,
+    output logic [1:0] aluctrl,
+    output logic displayctrl,
+    output logic [5:0] LEDs,
+
+    output logic [15:0] LFSRout,
+    output logic [15:0] muxout,
+    output logic [15:0] A,
+    output logic [15:0] B,
+    output logic [15:0] ALUout
 
 );
-    logic muxctrl;
-    logic WEreg;
-    logic WElfsr;
-    logic [4:0] addr_rd;
-    logic [4:0] addr_rs1;
-    logic [4:0] addr_rs2;
-    logic [1:0] aluctrl;
-    logic displayctrl;
-    logic [5:0] LEDs;
     
-    
-    logic [15:0] LFSRout;
-    logic [15:0] muxout;
-    logic [15:0] A;
-    logic [15:0] B;
-    logic [15:0] ALUout;
 
 
 
