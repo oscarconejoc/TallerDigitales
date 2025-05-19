@@ -270,6 +270,17 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                     rdy = 1;
                 end
             end
+            estado7: begin
+                muxctrl = 0;
+                WEreg   = 0;
+                WElfsr  = 0;
+                LEDs    = 6'b000000;
+                addr_rd = 5'b00000;
+                addr_rs1 = 5'b00000;
+                addr_rs2 = count;
+                aluctrl  = 2'b00;
+                displayctrl = 1;
+            end
                 
         endcase
         end
