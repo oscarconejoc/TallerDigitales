@@ -5,7 +5,7 @@ May 24 2019
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv,1747592471,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,,ALU,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,1747595376,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,,Banco_Registros,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/glbl.v,1747264296,verilog,,,,glbl,,,,,,,,
-C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1747689675,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1747691534,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,1747592606,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,,Generator,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,1747264296,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,,mux,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,1747264649,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv,,TopFSM,,,,,,,,

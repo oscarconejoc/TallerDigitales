@@ -21,7 +21,8 @@ module fsm_mealy #(parameter int N_OPS = 10)(
         estado3    = 3'b010,
         estado4    = 3'b011,
         estado5    = 3'b100,
-        estado6    = 3'b101    
+        estado6    = 3'b101,
+        estado7    = 3'b110    
     } state_t;
 
     state_t current_state, next_state;
@@ -31,6 +32,10 @@ module fsm_mealy #(parameter int N_OPS = 10)(
     logic [5:0] count;
     logic done;
     logic rdy = 0;
+    logic timer1;
+    logic [24:0] counttimer1;
+    logic timer2;
+    logic [24:0] counttimer2;
 
     // Registro de estado (secuencia)
     always_ff @(posedge clk) begin
@@ -70,6 +75,25 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 end
             end else begin
                 done <= 0;
+            end
+        end
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin : blockName
+        if (rst_n == 0) begin
+            counttimer2 <= 25'd0;
+            timer2 <= 0;
+        end else begin
+            if (current_state == estado7) begin
+                if (counttimer2 == 25'd20000000) begin
+                    counttimer2 <= 25'd0;
+                    timer2 <= 1;
+                end else begin
+                    counttimer2 <= counttimer2 + 1;
+                    timer2 <= 0;
+                end
+            end else begin
+                timer2 <= 0;
             end
         end
     end
@@ -115,11 +139,18 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             estado5: begin
                 if (done == 1) begin
                     next_state = estado1;
+                end else begin
+                    next_state = estado7;
                 end
             end
             estado6: begin
                 if (rdy == 1) begin
                     next_state = estado3;
+                end
+            end
+            estado7: begin
+                if (timer2 == 1) begin
+                    next_state = estado5;
                 end
             end
             
