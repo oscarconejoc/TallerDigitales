@@ -34,7 +34,7 @@ module Banco_Registros #(parameter N = 32, parameter W = 16)( //senales de entra
 //    end
     
     //Lectura combinacional del banco de registro
-    assign rs1 = (addr_rs1 == 0) ? 0 : mem[addr_rs1]; //Si la direccion es 0. brinda un valor de 0 en la lectura
-    assign rs2 = (addr_rs2 == 0) ? 0 : mem[addr_rs2]; //En caso de no ser 0 brinda el dato en la direccion solicitada
+    assign rs1 = mem[addr_rs1]; 
+    assign rs2 = mem[addr_rs2]; 
 
 endmodule

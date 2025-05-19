@@ -9,7 +9,7 @@ module Generator (
     logic [15:0] aleatorio_sal;
     always_ff @ (posedge clk) begin
         if (!rst) begin
-            aleatorio_sal <= 7'b0000000;
+            aleatorio_sal <= 16'b0000000000000000;
         end
         else if(write) begin
                 aleatorio_sal <= $urandom%128;

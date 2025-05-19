@@ -6,16 +6,16 @@ module ALU (
 );
     always_comb begin  
         case (ALUControl)
-            2'b00: begin //and
+            2'b01: begin //and
                 ALUResult = A & B;
             end
-            2'b01: begin //or
+            2'b00: begin //or
                 ALUResult = A | B;
             end
-            2'b10: begin //suma
+            2'b11: begin //suma
                 ALUResult = A + B;
             end
-            2'b11: begin //resta
+            2'b10: begin //resta
                 ALUResult = A - B;
             end
             default: begin

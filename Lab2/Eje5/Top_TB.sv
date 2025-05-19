@@ -55,9 +55,24 @@ module Top_TB ();
 
         #50;
         rst = 1; //Se hace el borrado de la memoria
-        #50;
+        #200;
 
         ALUbotones = 4'b1000;
+        
+        #100;
+
+        ALUbotones = 4'b0010;
+        #100;
+
+        ALUbotones = 4'b0100;
+        #100;
+
+        ALUbotones = 4'b0001;
+        #100;
+
+//        CambioModo = 1;
+//        #200;
+//        CambioModo = 0;
     end
 
 

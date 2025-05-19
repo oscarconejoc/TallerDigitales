@@ -20,13 +20,17 @@ module fsm_mealy #(parameter int N_OPS = 10)(
         estado2    = 3'b001,
         estado3    = 3'b010,
         estado4    = 3'b011,
-        estado5    = 3'b100    
+        estado5    = 3'b100,
+        estado6    = 3'b101    
     } state_t;
 
     state_t current_state, next_state;
 
     logic step;
     logic [4:0] op_counter;   // Contador de operaciones realizadas (0 a 30)
+    logic [5:0] count;
+    logic done;
+    logic rdy = 0;
 
     // Registro de estado (secuencia)
     always_ff @(posedge clk) begin
@@ -46,7 +50,26 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 if (op_counter < N_OPS)
                     op_counter <= op_counter + 1'b1;
                 else
-                    op_counter <= '0; // Contador circular (reinicia al m�ximo)
+                    op_counter <= '0; // Contador circular (reinicia al maximo)
+            end
+        end
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin 
+        if (rst_n == 0) begin
+            count <= 6'd0;
+            done  <= 1'b0;
+        end else begin
+            if (current_state == estado5) begin
+                if (count == 6'd30) begin
+                    count <= 6'd0;
+                    done <= 1;
+                end else begin
+                    count <= count + 1;
+                    done <= 0;
+                end
+            end else begin
+                done <= 0;
             end
         end
     end
@@ -56,7 +79,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
     always_ff @(posedge clk or negedge rst_n) begin
         if (rst_n == 0)
             step <= 0;
-        else if (current_state == estado1)
+        else if (current_state == estado1 || current_state == estado2)
             step <= ~step;  // alterna entre 0 y 1 cada ciclo en S1
         else
             step <= 0;
@@ -73,7 +96,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             end
             estado2: begin
                 if (step == 1 || CambioModo)
-                    next_state = estado3;  // luego de dos ciclos, avanza
+                    next_state = estado6;  // luego de dos ciclos, avanza
             end
             estado3: begin
                 if (CambioModo) begin
@@ -90,7 +113,14 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 end
             end
             estado5: begin
-                next_state = estado1;
+                if (done == 1) begin
+                    next_state = estado1;
+                end
+            end
+            estado6: begin
+                if (rdy == 1) begin
+                    next_state = estado3;
+                end
             end
             
         endcase
@@ -153,6 +183,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             end
             estado3: begin
                 displayctrl = 0;
+                WEreg = 1;
                 addr_rs1 = op_counter * 3;
                 addr_rs2 = op_counter * 3 + 1;
                 priority if (ALUbotones[0])      aluctrl = 2'b00; // OR
@@ -180,6 +211,33 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 WElfsr = 0;
                 muxctrl = 0;
                 WEreg = 0;
+            end
+            estado5: begin
+                muxctrl = 0;
+                WEreg   = 0;
+                WElfsr  = 0;
+                LEDs    = 6'b000000;
+                addr_rd = 5'b00000;
+                addr_rs1 = 5'b00000;
+                addr_rs2 = count;
+                aluctrl  = 2'b00;
+                displayctrl = 1;
+            end
+            estado6: begin
+                muxctrl = 0;
+                WEreg   = 0;
+                WElfsr  = 0;
+                LEDs    = 6'b000000;
+                addr_rd = 5'b00000;
+                addr_rs1 = 5'b00000;
+                addr_rs2 = 5'b00000;
+                aluctrl  = 2'b00;
+                displayctrl = 0;
+                if (ALUbotones == 4'b0000) begin
+                    rdy = 0;
+                end else begin
+                    rdy = 1;
+                end
             end
                 
         endcase
