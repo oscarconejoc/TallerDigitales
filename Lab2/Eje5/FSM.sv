@@ -1,6 +1,6 @@
 module fsm_mealy #(parameter int N_OPS = 10)(
-    input logic         clk,
-    input logic         rst_n,         // reset activo en bajo
+    input logic                  clk,
+    input logic                  rst_n,         // reset activo en bajo
     input logic     [3:0]        ALUbotones,  
     input logic                  CambioModo,   
     output logic                 muxctrl,
@@ -15,14 +15,16 @@ module fsm_mealy #(parameter int N_OPS = 10)(
 );
 
     // Definición de estados
-    typedef enum logic [2:0] {
-        estado1    = 3'b000,
-        estado2    = 3'b001,
-        estado3    = 3'b010,
-        estado4    = 3'b011,
-        estado5    = 3'b100,
-        estado6    = 3'b101,
-        estado7    = 3'b110    
+    typedef enum logic [3:0] {
+        estado1    = 4'b0000,
+        estado2    = 4'b0001,
+        estado3    = 4'b0010,
+        estado4    = 4'b0011,
+        estado5    = 4'b0100,
+        estado6    = 4'b0101,
+        estado7    = 4'b0110,
+        estado8    = 4'b0111,
+        estado9    = 4'b1000   
     } state_t;
 
     state_t current_state, next_state;
@@ -79,7 +81,26 @@ module fsm_mealy #(parameter int N_OPS = 10)(
         end
     end
 
-    always_ff @(posedge clk or negedge rst_n) begin : blockName
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (rst_n == 0) begin
+            counttimer1 <= 25'd0;
+            timer1 <= 0;
+        end else begin
+            if (current_state == estado2 || current_state == estado8 || current_state == estado4) begin
+                if (counttimer1 == 25'd2) begin
+                    counttimer1 <= 25'd0;
+                    timer1 <= 1;
+                end else begin
+                    counttimer1 <= counttimer1 + 1;
+                    timer1 <= 0;
+                end
+            end else begin
+                timer1 <= 0;
+            end
+        end
+    end
+
+    always_ff @(posedge clk or negedge rst_n) begin
         if (rst_n == 0) begin
             counttimer2 <= 25'd0;
             timer2 <= 0;
@@ -119,8 +140,9 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                     next_state = estado2;  // luego de dos ciclos, avanza
             end
             estado2: begin
-                if (step == 1 || CambioModo)
-                    next_state = estado6;  // luego de dos ciclos, avanza
+                if (timer1 == 1 || CambioModo) begin
+                    next_state = estado8;
+                end
             end
             estado3: begin
                 if (CambioModo) begin
@@ -132,7 +154,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             estado4: begin
                 if (CambioModo) begin
                     next_state = estado5;
-                end else begin
+                end else if (timer1 == 1) begin
                     next_state = estado1;
                 end
             end
@@ -144,13 +166,18 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 end
             end
             estado6: begin
-                if (rdy == 1) begin
+                if (rdy == 1 || CambioModo) begin
                     next_state = estado3;
                 end
             end
             estado7: begin
                 if (timer2 == 1) begin
                     next_state = estado5;
+                end
+            end
+            estado8: begin
+                if (timer1 == 1 || CambioModo) begin
+                    next_state = estado6;
                 end
             end
             
@@ -196,21 +223,15 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 end
             end
             estado2:   begin
-                if (step == 0) begin
-                    WElfsr = 0;
-                    muxctrl = 0;
-                    WEreg = 0;
-                    addr_rs2 = op_counter * 3;
-                    LEDs = 6'b000001;
-                    displayctrl = 1;
-                end else begin
-                    WElfsr = 0;
-                    muxctrl = 0;
-                    WEreg = 0;
-                    addr_rs2 = op_counter * 3 + 1;
-                    LEDs = 6'b000010;
-                    displayctrl = 1;
-                end
+                muxctrl = 0;
+                WEreg   = 0;
+                WElfsr  = 0;
+                LEDs    = 6'b000001;
+                addr_rd = 5'b00000;
+                addr_rs1 = 5'b00000;
+                addr_rs2 = op_counter * 3;
+                aluctrl  = 2'b00;
+                displayctrl = 1;
             end
             estado3: begin
                 displayctrl = 0;
@@ -278,6 +299,17 @@ module fsm_mealy #(parameter int N_OPS = 10)(
                 addr_rd = 5'b00000;
                 addr_rs1 = 5'b00000;
                 addr_rs2 = count;
+                aluctrl  = 2'b00;
+                displayctrl = 1;
+            end
+            estado8:   begin
+                muxctrl = 0;
+                WEreg   = 0;
+                WElfsr  = 0;
+                LEDs    = 6'b000010;
+                addr_rd = 5'b00000;
+                addr_rs1 = 5'b00000;
+                addr_rs2 = op_counter * 3 + 1;
                 aluctrl  = 2'b00;
                 displayctrl = 1;
             end

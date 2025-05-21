@@ -1,16 +1,16 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.fsm_mealy
