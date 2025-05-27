@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Oscar/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim/Top_TB_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module Banco_Registros
+INFO: [VRFC 10-311] analyzing module Generator
+INFO: [VRFC 10-311] analyzing module TopFSM
+INFO: [VRFC 10-311] analyzing module fsm_mealy
+INFO: [VRFC 10-311] analyzing module glbl

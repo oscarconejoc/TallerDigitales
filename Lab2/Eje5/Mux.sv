@@ -7,13 +7,14 @@ module mux (
 always_comb begin
     case (sel)
         1'b0: begin
-            assign out = A;
+             out = A;
         end
 
         1'b1: begin
-            assign out = B;
+             out = B;
         end
-        default: assign out = A;
+        default:  out = A;
     endcase
 end
+
 endmodule

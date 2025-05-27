@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747944805">
+  <File Type="PA-TCL" Name="TopFSM.tcl"/>
+  <File Type="BITSTR-BMM" Name="TopFSM_bd.bmm"/>
+  <File Type="REPORTS-TCL" Name="TopFSM_reports.tcl"/>
+  <File Type="OPT-DCP" Name="TopFSM_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TopFSM_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TopFSM.hwdef"/>
+  <File Type="PWROPT-DCP" Name="TopFSM_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="TopFSM_placed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TopFSM_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="TopFSM.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TopFSM_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="TopFSM.bin"/>
+  <File Type="PHYSOPT-DCP" Name="TopFSM_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="TopFSM.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TopFSM_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TopFSM_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TopFSM_routed_bb.dcp"/>
+  <File Type="BITSTR-LTX" Name="TopFSM.ltx"/>
+  <File Type="BITSTR-MMI" Name="TopFSM.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TopFSM.sysdef"/>
+  <File Type="ROUTE-TIMING-PB" Name="TopFSM_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TopFSM_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TopFSM_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="TopFSM.bit"/>
+  <File Type="BITSTR-RBT" Name="TopFSM.rbt"/>
+  <File Type="BITSTR-NKY" Name="TopFSM.nky"/>
+  <File Type="BG-DRC" Name="TopFSM.drc"/>
+  <File Type="RDI-RDI" Name="TopFSM.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../ALU.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Banco_Registros.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../FSM.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LFSR.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Mux.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Top_TB.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TopFSM"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
