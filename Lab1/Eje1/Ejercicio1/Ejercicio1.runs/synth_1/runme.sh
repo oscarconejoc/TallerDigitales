@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Vivado/2019.1/bin
+  PATH=E:/Vivado/SDK/2019.1/bin;E:/Vivado/Vivado/2019.1/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2019.1/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2019.1/bin
 else
-  PATH=C:/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Vivado/2019.1/bin:$PATH
+  PATH=E:/Vivado/SDK/2019.1/bin;E:/Vivado/Vivado/2019.1/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2019.1/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.runs/synth_1'
+HD_PWD='C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,32 +1,52 @@
 module TopFSM (
-    input logic clk,
+    input logic clk1,
     input logic rst,
     input logic [3:0] ALUbotones,
     input logic CambioModo,
-    output logic muxctrl,
-    output logic WEreg,
-    output logic WElfsr,
-    output logic [4:0] addr_rd,
-    output logic [4:0] addr_rs1,
-    output logic [4:0] addr_rs2,
-    output logic [1:0] aluctrl,
-    output logic displayctrl,
     output logic [5:0] LEDs,
-
-    output logic [15:0] LFSRout,
-    output logic [15:0] muxout,
-    output logic [15:0] A,
-    output logic [15:0] B,
-    output logic [15:0] ALUout
-
-);
     
 
+    output logic [6:0]  seg0       
+//    output logic [6:0]  seg1,
+//    output logic [6:0]  seg2,
+//    output logic [6:0]  seg3
+
+);
+
+    logic muxctrl;
+    logic WEreg;
+    logic WElfsr;
+    logic [4:0] addr_rd;
+    logic [4:0] addr_rs1;
+    logic [4:0] addr_rs2;
+    logic [1:0] aluctrl;
+    logic displayctrl;
+
+    logic [15:0] LFSRout;
+    logic [15:0] muxout;
+    logic [15:0] A;
+    logic [15:0] B;
+    logic [15:0] ALUout;
+
+
+
+
+    
+    clk_wiz_0 instance_name
+   (
+    // Clock out ports
+    .CLK(CLK),     // output CLK
+    // Status and control signals
+    .reset(!rst), // input reset
+    .locked(locked),       // output locked
+   // Clock in ports
+    .clk_in1(clk1));      // input clk_in1
+// INST_TAG_END ------ End INSTANTIATION Template ---------
 
 
 
     fsm_mealy FSM (
-        .clk(clk),
+        .clk(CLK),
         .rst_n(rst),         
         .ALUbotones(ALUbotones),  
         .CambioModo(CambioModo),   
@@ -42,7 +62,7 @@ module TopFSM (
     );
 
     Banco_Registros Banco1 (
-        .clk(clk),
+        .clk(CLK),
         .rst(rst),
         .addr_rs1(addr_rs1),
         .addr_rs2(addr_rs2),
@@ -55,7 +75,7 @@ module TopFSM (
 
     Generator LFSR1 (
         .rst(rst),
-        .clk(clk),
+        .clk(CLK),
         .write(WElfsr),
         .aleatorio(LFSRout)
     );
@@ -72,6 +92,15 @@ module TopFSM (
         .B(B),
         .ALUControl(aluctrl),
         .ALUResult(ALUout)
+    );
+
+    display Display1(
+        .enable(displayctrl),
+        .bin_in(B),
+        .seg0(seg0)
+//        .seg1(seg1),
+//        .seg2(seg2),
+//        .seg3(seg3)
     );
 
 endmodule

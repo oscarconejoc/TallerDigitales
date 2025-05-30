@@ -5,41 +5,25 @@ module Top_TB ();
     logic                  rst;
     logic   [3:0]          ALUbotones;
     logic                  CambioModo;
-    logic muxctrl;
-    logic WEreg;
-    logic WElfsr;
-    logic [4:0] addr_rd;
-    logic [4:0] addr_rs1;
-    logic [4:0] addr_rs2;
-    logic [1:0] aluctrl;
-    logic displayctrl;
-    logic [5:0]  LEDs;   
-    logic [15:0] LFSRout;
-    logic [15:0] muxout;
-    logic [15:0] A;
-    logic [15:0] B;
-    logic [15:0] ALUout;
+    logic [5:0] LEDs;
+
+    logic [6:0]  seg0;      
+//    logic [6:0]  seg1;
+//    logic [6:0]  seg2;
+//    logic [6:0]  seg3;
 
     TopFSM Top1 (
-        .clk (clk),
+        .clk1 (clk),
         .rst (rst),
         .ALUbotones(ALUbotones),
         .CambioModo(CambioModo),
-        .muxctrl(muxctrl),
-        .WEreg(WEreg),
-        .WElfsr(WElfsr),
-        .addr_rd(addr_rd),
-        .addr_rs1(addr_rs1),
-        .addr_rs2(addr_rs2),
-        .aluctrl(aluctrl),
-        .displayctrl(displayctrl),
         .LEDs(LEDs),
-    
-        .LFSRout(LFSRout),
-        .muxout(muxout),
-        .A(A),
-        .B(B),
-        .ALUout(ALUout)
+
+
+        .seg0(seg0)
+//        .seg1(seg1),
+//        .seg2(seg2),
+//        .seg3(seg3)
     );
 
     always begin //Instancia del reloj

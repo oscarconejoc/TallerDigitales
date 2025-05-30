@@ -87,8 +87,8 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             counttimer1 <= 25'd0;
             timer1 <= 0;
         end else begin
-            if (current_state == estado2 || current_state == estado8 || current_state == estado4) begin
-                if (counttimer1 == 25'd2) begin
+            if (current_state == estado2 || current_state == estado8 || current_state == estado4 || current_state == estado3) begin
+                if (counttimer1 == 25'd20000000) begin
                     counttimer1 <= 25'd0;
                     timer1 <= 1;
                 end else begin
@@ -148,7 +148,7 @@ module fsm_mealy #(parameter int N_OPS = 10)(
             estado3: begin
                 if (CambioModo) begin
                     next_state = estado5;
-                end else begin
+                end else if (timer1 == 1) begin
                     next_state = estado4;
                 end
             end

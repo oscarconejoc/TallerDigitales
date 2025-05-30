@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 30 15:32:57 2025
+# Process ID: 29808
+# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24308 C:\Users\XPC\Desktop\TallerDigitales\Lab1\Eje1\Ejercicio1\Ejercicio1.xpr
+# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/vivado.log
+# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.xpr
+update_compile_order -fileset sources_1
+open_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1

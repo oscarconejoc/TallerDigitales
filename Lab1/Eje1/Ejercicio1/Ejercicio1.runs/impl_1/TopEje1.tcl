@@ -60,25 +60,21 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
+  set_param chipscope.maxJobs 3
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.xpr [current_project]
-  set_property ip_output_repo C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.xpr [current_project]
+  set_property ip_output_repo C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.runs/synth_1/TopEje1.dcp
-  read_xdc C:/Users/sdany/OneDrive/Documents/Eje1/Ejercicio1/Ejercicio1.srcs/constrs_1/new/constraints.xdc
+  add_files -quiet C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.runs/synth_1/TopEje1.dcp
+  read_xdc C:/Users/XPC/Desktop/TallerDigitales/Lab1/Eje1/Ejercicio1/Ejercicio1.srcs/constrs_1/new/constraints.xdc
   link_design -top TopEje1 -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -151,24 +147,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force TopEje1.mmi }
-  write_bitstream -force TopEje1.bit 
-  catch {write_debug_probes -quiet -force TopEje1}
-  catch {file copy -force TopEje1.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
