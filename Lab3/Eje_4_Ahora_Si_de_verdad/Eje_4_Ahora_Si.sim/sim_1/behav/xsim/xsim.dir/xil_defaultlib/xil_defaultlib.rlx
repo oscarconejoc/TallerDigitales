@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/VivadoProjects/Eje_4_Ahora_Si - copia/Eje_4_Ahora_Si.gen/sources_1/ip/FIFO_Prueba/sim/FIFO_Prueba.v,1749365880,verilog,,,,FIFO_Prueba,,uvm,../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic,,,,,
+C:/VivadoProjects/Eje_4_Ahora_Si - copia/Eje_4_Ahora_Si.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/VivadoProjects/Eje_4_Ahora_Si/Eje_4_Ahora_Si.gen/sources_1/ip/clock_16MHz/clock_16MHz.v,1749491827,verilog,,C:/VivadoProjects/Eje_4_Ahora_Si/Eje_4_Ahora_Si.gen/sources_1/ip/FIFO_Prueba/sim/FIFO_Prueba.v,,clock_16MHz,,uvm,../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic,,,,,
+C:/VivadoProjects/Eje_4_Ahora_Si/Eje_4_Ahora_Si.gen/sources_1/ip/clock_16MHz/clock_16MHz_clk_wiz.v,1749491827,verilog,,C:/VivadoProjects/Eje_4_Ahora_Si/Eje_4_Ahora_Si.gen/sources_1/ip/clock_16MHz/clock_16MHz.v,,clock_16MHz_clk_wiz,,uvm,../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic,,,,,
+C:/VivadoProjects/FIFO.sv,1749497061,systemVerilog,,C:/VivadoProjects/FIFO_tbb.sv,,FIFO_TOP,,uvm,../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic,,,,,
+C:/VivadoProjects/FIFO_tbb.sv,1749498862,systemVerilog,,,,FIFO_tbb,,uvm,../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic,,,,,

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic" \
+"../../../../Eje_4_Ahora_Si.gen/sources_1/ip/FIFO_Prueba/sim/FIFO_Prueba.v" \
+
+sv xil_defaultlib  --include "../../../../Eje_4_Ahora_Si.ip_user_files/ipstatic" \
+"../../../../../FIFO.sv" \
+"../../../../../FIFO_tbb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
