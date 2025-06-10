@@ -27,26 +27,26 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/wt [current_project]
-set_property parent.project_path C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/wt [current_project]
+set_property parent.project_path C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/ip [current_project]
+set_property ip_output_repo c:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/ALU.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Banco_Registros.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/FSM.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/LFSR.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Mux.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/display.sv
+  C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Top.sv
 }
-read_ip -quiet c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -56,8 +56,8 @@ set_property used_in_implementation false [get_files -all c:/Users/XPC/Desktop/T
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
-set_property used_in_implementation false [get_files C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc]
+read_xdc C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
+set_property used_in_implementation false [get_files C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

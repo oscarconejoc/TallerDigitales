@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Fri May 30 16:09:25 2025
-| Host             : DESKTOP-H2BA1LP running 64-bit major release  (build 9200)
+| Date             : Tue Jun 10 14:37:51 2025
+| Host             : Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file TopFSM_power_routed.rpt -pb TopFSM_power_summary_routed.pb -rpx TopFSM_power_routed.rpx
 | Design           : TopFSM
 | Device           : xc7a35tcpg236-1
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1289 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1290 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      474 |     20800 |            2.28 |
 |   CARRY4       |    <0.001 |       16 |      8150 |            0.20 |
 |   F7/F8 Muxes  |    <0.001 |      125 |     32600 |            0.38 |
 |   Register     |    <0.001 |      597 |     41600 |            1.44 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |     1018 |       --- |             --- |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |     1019 |       --- |             --- |
 | PLL            |     0.097 |        1 |         5 |           20.00 |
-| I/O            |    <0.001 |       20 |       106 |           18.87 |
+| I/O            |    <0.001 |       21 |       106 |           19.81 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.170 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

@@ -72,14 +72,14 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/wt [current_project]
-  set_property parent.project_path C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr [current_project]
-  set_property ip_output_repo C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/wt [current_project]
+  set_property parent.project_path C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr [current_project]
+  set_property ip_output_repo C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/TopFSM.dcp
-  read_ip -quiet c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_xdc C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
+  add_files -quiet C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/TopFSM.dcp
+  read_ip -quiet C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_xdc C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
   link_design -top TopFSM -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

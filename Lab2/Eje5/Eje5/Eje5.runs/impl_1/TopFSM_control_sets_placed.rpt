@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri May 30 16:09:09 2025
-| Host         : DESKTOP-H2BA1LP running 64-bit major release  (build 9200)
+| Date         : Tue Jun 10 14:37:29 2025
+| Host         : Laptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopFSM_control_sets_placed.rpt
 | Design       : TopFSM
 | Device       : xc7a35t
@@ -59,8 +59,8 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |               4 |            3 |
-| No           | Yes                   | No                     |               4 |            3 |
+| No           | No                    | Yes                    |               4 |            4 |
+| No           | Yes                   | No                     |               4 |            4 |
 | Yes          | No                    | No                     |              16 |            6 |
 | Yes          | No                    | Yes                    |             556 |          224 |
 | Yes          | Yes                   | No                     |              16 |            4 |
@@ -75,43 +75,43 @@ Table of Contents
 +-------------------------+-------------------------------+------------------+------------------+----------------+
 |  FSM/rdy4_out           |                               |                  |                1 |              1 |
 |  instance_name/inst/CLK | FSM/op_counter0               | Banco1/p_0_in__0 |                2 |              4 |
-|  instance_name/inst/CLK | FSM/count[5]_i_1_n_0          | Banco1/p_0_in__0 |                3 |              6 |
-|  instance_name/inst/CLK |                               | Banco1/p_0_in__0 |                6 |              8 |
-|  instance_name/inst/CLK | FSM/step_reg_9[0]             | Banco1/p_0_in__0 |                5 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_6[0]    | Banco1/p_0_in__0 |                5 |             16 |
-|  instance_name/inst/CLK | FSM/E[0]                      | Banco1/p_0_in__0 |                9 |             16 |
-|  instance_name/inst/CLK | FSM/current_state_reg[1]_0[0] | Banco1/p_0_in__0 |                9 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[0]_1[0]    | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_0[0]    | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/current_state_reg[3]_4[0] | Banco1/p_0_in__0 |                6 |             16 |
-|  instance_name/inst/CLK | FSM/current_state_reg[3]_6[0] | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/current_state_reg[3]_3[0] | Banco1/p_0_in__0 |                3 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_4[0]             |                  |                6 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_13[0]            | Banco1/p_0_in__0 |                9 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_4[0]    | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_3[0]             | Banco1/p_0_in__0 |                7 |             16 |
+|  instance_name/inst/CLK | FSM/count[5]_i_1_n_0          | Banco1/p_0_in__0 |                2 |              6 |
+|  instance_name/inst/CLK |                               | Banco1/p_0_in__0 |                8 |              8 |
 |  instance_name/inst/CLK | FSM/op_counter_reg[1]_7[0]    | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_7[0]             | Banco1/p_0_in__0 |                5 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_7[0]             | Banco1/p_0_in__0 |                7 |             16 |
+|  instance_name/inst/CLK | FSM/E[0]                      | Banco1/p_0_in__0 |                9 |             16 |
+|  instance_name/inst/CLK | FSM/current_state_reg[1]_0[0] | Banco1/p_0_in__0 |                4 |             16 |
+|  instance_name/inst/CLK | FSM/current_state_reg[3]_4[0] | Banco1/p_0_in__0 |                9 |             16 |
+|  instance_name/inst/CLK | FSM/current_state_reg[3]_3[0] | Banco1/p_0_in__0 |                4 |             16 |
+|  instance_name/inst/CLK | FSM/current_state_reg[3]_6[0] | Banco1/p_0_in__0 |                4 |             16 |
 |  instance_name/inst/CLK | FSM/step_reg_16[0]            | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_1[0]    | Banco1/p_0_in__0 |                9 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_14[0]            | Banco1/p_0_in__0 |                9 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_15[0]            | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_0[0]             | Banco1/p_0_in__0 |                6 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_2[0]             | Banco1/p_0_in__0 |               10 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_11[0]            | Banco1/p_0_in__0 |               13 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_5[0]    | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_3[0]    | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_5[0]             | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/op_counter_reg[1]_10[0]   | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_1[0]             | Banco1/p_0_in__0 |                6 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_17[0]            | Banco1/p_0_in__0 |                8 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_6[0]             | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_10[0]            | Banco1/p_0_in__0 |                7 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_5[0]    | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_15[0]            | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_3[0]             | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_1[0]    | Banco1/p_0_in__0 |                8 |             16 |
 |  instance_name/inst/CLK | FSM/op_counter_reg[1]_2[0]    | Banco1/p_0_in__0 |                7 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_8[0]             | Banco1/p_0_in__0 |                4 |             16 |
-|  instance_name/inst/CLK | FSM/step_reg_12[0]            | Banco1/p_0_in__0 |                9 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_8[0]             | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[0]_1[0]    | Banco1/p_0_in__0 |                5 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_0[0]    | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_6[0]             | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_9[0]             | Banco1/p_0_in__0 |                5 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_2[0]             | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_10[0]   | Banco1/p_0_in__0 |                7 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_4[0]    | Banco1/p_0_in__0 |                4 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_5[0]             | Banco1/p_0_in__0 |                9 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_1[0]             | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_0[0]             | Banco1/p_0_in__0 |                4 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_17[0]            | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_10[0]            | Banco1/p_0_in__0 |                5 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_3[0]    | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_11[0]            | Banco1/p_0_in__0 |               10 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_4[0]             |                  |                6 |             16 |
+|  instance_name/inst/CLK | FSM/op_counter_reg[1]_6[0]    | Banco1/p_0_in__0 |                6 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_12[0]            | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_13[0]            | Banco1/p_0_in__0 |                8 |             16 |
+|  instance_name/inst/CLK | FSM/step_reg_14[0]            | Banco1/p_0_in__0 |                7 |             16 |
 |  instance_name/inst/CLK | FSM/counttimer10              | Banco1/p_0_in__0 |                6 |             25 |
-|  instance_name/inst/CLK | FSM/counttimer2[24]_i_1_n_0   | Banco1/p_0_in__0 |                8 |             25 |
+|  instance_name/inst/CLK | FSM/counttimer2[24]_i_1_n_0   | Banco1/p_0_in__0 |                6 |             25 |
 +-------------------------+-------------------------------+------------------+------------------+----------------+
 
 

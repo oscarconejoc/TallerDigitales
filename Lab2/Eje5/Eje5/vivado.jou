@@ -2,249 +2,113 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri May 30 13:46:10 2025
-# Process ID: 29268
-# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26396 C:\Users\XPC\Desktop\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
-# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
-# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
+# Start of session at: Tue Jun 10 13:42:31 2025
+# Process ID: 4388
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13348 C:\Users\oscar\OneDrive\Escritorio\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
+# Log file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+open_project C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source Top_TB.tcl
 reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
 launch_runs impl_1 -jobs 6
 wait_on_run impl_1
-launch_simulation -mode post-synthesis -type functional
-source Top_TB.tcl
-launch_simulation -mode post-synthesis -type timing
-source Top_TB.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-current_sim simulation_2
-current_sim simulation_1
-close_sim
-close_sim
-close_sim
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip
-set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {100.000} CONFIG.CLK_OUT1_PORT {CLK} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10.000} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {41} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {82} CONFIG.CLKOUT1_JITTER {446.763} CONFIG.CLKOUT1_PHASE_ERROR {313.282}] [get_ips clk_wiz_0]
-generate_target {instantiation_template} [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-generate_target all [get_files  c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
-export_ip_user_files -of_objects [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-launch_runs -jobs 6 clk_wiz_0_synth_1
-export_simulation -of_objects [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files -ipstatic_source_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/modelsim} {questa=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/questa} {riviera=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/riviera} {activehdl=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-launch_simulation
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
-launch_simulation
-launch_simulation
-source Top_TB.tcl
-close_sim
-launch_simulation
-source Top_TB.tcl
-close_sim
-launch_simulation
-source Top_TB.tcl
 launch_runs synth_1 -jobs 6
 wait_on_run synth_1
 launch_runs impl_1 -jobs 6
 wait_on_run impl_1
-open_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
+refresh_design
 startgroup
-set_property package_pin "" [get_ports [list  {seg1[2]}]]
-place_ports {ALUbotones[3]} T18
+set_property package_pin "" [get_ports [list  {seg0[6]} {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports seg_sel U2
 endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list seg_sel]]
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
 startgroup
-set_property package_pin "" [get_ports [list  {seg1[4]}]]
-place_ports {ALUbotones[2]} W19
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
 endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {seg1[0]}]]
-place_ports {ALUbotones[1]} U18
-endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {seg1[3]}]]
-place_ports {ALUbotones[0]} T17
-endgroup
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+place_ports seg_sel U2
+place_ports rst U17
+place_ports CambioModo R2
+place_ports clk1 W5
 place_ports {LEDs[0]} U16
 place_ports {LEDs[1]} E19
 place_ports {LEDs[2]} L1
 place_ports {LEDs[3]} P1
-place_ports {LEDs[4]} N3
-place_ports {LEDs[5]} P3
-place_ports clk1 W5
-place_ports CambioModo R2
 startgroup
-set_property package_pin "" [get_ports [list  {seg0[5]}]]
-place_ports rst V17
+set_property package_pin "" [get_ports [list  {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
+place_ports {LEDs[4]} N3
 endgroup
-close_sim
-file mkdir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new
-close [ open C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc w ]
-add_files -fileset constrs_1 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
-set_property target_constrs_file C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc [current_fileset -constrset]
-save_constraints -force
-launch_simulation
-source Top_TB.tcl
-close_sim
-launch_simulation
-source Top_TB.tcl
-close_sim
-launch_simulation
-source Top_TB.tcl
-close_sim
+place_ports {LEDs[5]} P3
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports seg_sel U2
+place_ports rst V17
+place_ports clk1 W5
+startgroup
+set_property package_pin "" [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports CambioModo R2
+endgroup
+place_ports {LEDs[5]} V3
+place_ports {LEDs[3]} P3
+place_ports {LEDs[2]} N3
+place_ports {LEDs[1]} P1
+place_ports {LEDs[0]} L1
 reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
+save_constraints -force
 launch_runs impl_1 -jobs 6
 wait_on_run impl_1
 refresh_design
-place_ports {seg0[0]} U2
-place_ports {seg0[0]} T1
-place_ports {seg0[1]} U1
-place_ports {seg0[2]} W4
-place_ports {seg0[3]} V4
-place_ports {seg0[4]} U4
-place_ports {seg0[5]} V2
-place_ports {seg0[6]} U2
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property is_loc_fixed true [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
 save_constraints
 reset_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-set_property is_loc_fixed true [get_ports [list  {seg3[6]} {seg3[5]} {seg3[4]} {seg3[3]} {seg3[2]} {seg3[1]} {seg3[0]}]]
-set_property is_loc_fixed true [get_ports [list  {seg2[6]} {seg2[5]} {seg2[4]} {seg2[3]} {seg2[2]} {seg2[1]} {seg2[0]}]]
-set_property is_loc_fixed true [get_ports [list  {seg1[6]} {seg1[5]} {seg1[4]} {seg1[3]} {seg1[2]} {seg1[1]} {seg1[0]}]]
-save_constraints -force
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property IOSTANDARD LVCMOS18 [get_ports [list {ALUbotones[3]} {ALUbotones[2]} {ALUbotones[1]} {ALUbotones[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg1[6]} {seg1[5]} {seg1[4]} {seg1[3]} {seg1[2]} {seg1[1]} {seg1[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg2[6]} {seg2[5]} {seg2[4]} {seg2[3]} {seg2[2]} {seg2[1]} {seg2[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg3[6]} {seg3[5]} {seg3[4]} {seg3[3]} {seg3[2]} {seg3[1]} {seg3[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list CambioModo]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list clk1]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list rst]]
-save_constraints -force
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-refresh_design
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-refresh_design
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ALUbotones[3]} {ALUbotones[2]} {ALUbotones[1]} {ALUbotones[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list CambioModo]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list clk1]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-save_constraints
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

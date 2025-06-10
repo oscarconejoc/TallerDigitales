@@ -5,7 +5,7 @@ module TopFSM (
     input logic CambioModo,
     output logic [5:0] LEDs,
     
-
+    output logic [3:0] seg_sel,
     output logic [6:0]  seg0       
 //    output logic [6:0]  seg1,
 //    output logic [6:0]  seg2,
@@ -102,5 +102,7 @@ module TopFSM (
 //        .seg2(seg2),
 //        .seg3(seg3)
     );
+    
+    assign seg_sel = 1;
 
 endmodule

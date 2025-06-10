@@ -2,362 +2,57 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri May 30 13:46:10 2025
-# Process ID: 29268
-# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26396 C:\Users\XPC\Desktop\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
-# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
-# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
+# Start of session at: Tue Jun 10 13:42:31 2025
+# Process ID: 4388
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13348 C:\Users\oscar\OneDrive\Escritorio\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
+# Log file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+open_project C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 738.586 ; gain = 71.195
 update_compile_order -fileset sources_1
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 784.383 ; gain = 20.133
 reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1
-
-launch_runs synth_1 -jobs 6
-[Fri May 30 13:50:18 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 6
-[Fri May 30 13:50:46 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-launch_simulation -mode post-synthesis -type functional
-INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tcpg236-1
+[Tue Jun 10 13:43:56 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 13:43:56 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+open_run impl_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1144.945 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1674.414 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1674.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1674.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.551 ; gain = 442.281
-INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
-INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim/Top_TB_func_synth.v"
-INFO: [SIM-utils-36] Netlist generated:C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim/Top_TB_func_synth.v
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim/Top_TB_func_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Top_TB_func_synth xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Top_TB_func_synth xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.LUT5
-Compiling module unisims_ver.CARRY4
-Compiling module xil_defaultlib.ALU
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.OBUF
-Compiling module unisims_ver.x_lut3_mux8
-Compiling module unisims_ver.LUT3
-Compiling module unisims_ver.MUXF7
-Compiling module unisims_ver.LUT6
-Compiling module unisims_ver.x_lut1_mux2
-Compiling module unisims_ver.LUT1
-Compiling module unisims_ver.FDCE_default
-Compiling module unisims_ver.FDRE_default
-Compiling module unisims_ver.LUT4
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module unisims_ver.FDSE_default
-Compiling module unisims_ver.latchsre_ldce
-Compiling module unisims_ver.LDCE
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Generator
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_func_synth
-
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim/xsim.dir/Top_TB_func_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri May 30 13:51:44 2025...
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/func/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_func_synth -key {Post-Synthesis:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_func_synth' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1727.992 ; gain = 894.965
-launch_simulation -mode post-synthesis -type timing
-INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
-INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/Top_TB_time_synth.v"
-INFO: [SIM-utils-27] Writing SDF file...
-INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/Top_TB_time_synth.sdf"
-INFO: [SIM-utils-36] Netlist generated:C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/Top_TB_time_synth.v
-INFO: [SIM-utils-37] SDF generated:C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/Top_TB_time_synth.sdf
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/Top_TB_time_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Top_TB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Top_TB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "Top_TB_time_synth.sdf", for root module "Top_TB/Top1".
-INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "Top_TB_time_synth.sdf", for root module "Top_TB/Top1".
-Time Resolution for simulation is 1ps
-Compiling module simprims_ver.LUT5
-Compiling module simprims_ver.CARRY4
-Compiling module xil_defaultlib.ALU
-Compiling module simprims_ver.IBUF
-Compiling module simprims_ver.OBUF
-Compiling module simprims_ver.x_lut3_mux8
-Compiling module simprims_ver.LUT3
-Compiling module simprims_ver.MUXF7
-Compiling module simprims_ver.LUT6
-Compiling module simprims_ver.x_lut1_mux2
-Compiling module simprims_ver.LUT1
-Compiling module simprims_ver.FDCE_default
-Compiling module simprims_ver.FDRE_default
-Compiling module simprims_ver.LUT4
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module simprims_ver.FDSE_default
-Compiling module simprims_ver.latchsre_ldce
-Compiling module simprims_ver.LDCE
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Generator
-Compiling module simprims_ver.BUFG
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_time_synth
-
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim/xsim.dir/Top_TB_time_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri May 30 13:52:57 2025...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1752.062 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/synth/timing/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_time_synth -key {Post-Synthesis:sim_1:Timing:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_time_synth' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1752.062 ; gain = 24.070
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1
-
-launch_runs synth_1 -jobs 6
-[Fri May 30 13:55:39 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 13:56:08 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-current_sim simulation_2
-current_sim simulation_1
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri May 30 13:58:50 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 13:59:19 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip
-set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {100.000} CONFIG.CLK_OUT1_PORT {CLK} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10.000} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {41} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {82} CONFIG.CLKOUT1_JITTER {446.763} CONFIG.CLKOUT1_PHASE_ERROR {313.282}] [get_ips clk_wiz_0]
-generate_target {instantiation_template} [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
-generate_target all [get_files  c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
-catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
-export_ip_user_files -of_objects [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-launch_runs -jobs 6 clk_wiz_0_synth_1
-[Fri May 30 14:09:39 2025] Launched clk_wiz_0_synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/clk_wiz_0_synth_1/runme.log
-export_simulation -of_objects [get_files c:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files -ipstatic_source_dir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/modelsim} {questa=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/questa} {riviera=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/riviera} {activehdl=C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri May 30 14:14:18 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 14:15:02 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1812.859 ; gain = 1037.402
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 13:53:25 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -369,394 +64,29 @@ INFO: [Labtools 27-2221] Launch Output:
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2916.746 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1818.438 ; gain = 5.578
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clk_wiz_0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2458] undeclared symbol CLK, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:38]
-INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:41]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3180] cannot find port 'ALUout' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:47]
-ERROR: [VRFC 10-3180] cannot find port 'B' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:46]
-ERROR: [VRFC 10-3180] cannot find port 'A' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:45]
-ERROR: [VRFC 10-3180] cannot find port 'muxout' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:44]
-ERROR: [VRFC 10-3180] cannot find port 'LFSRout' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:43]
-ERROR: [VRFC 10-3180] cannot find port 'LEDs' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:41]
-ERROR: [VRFC 10-3180] cannot find port 'displayctrl' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:40]
-ERROR: [VRFC 10-3180] cannot find port 'aluctrl' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:39]
-ERROR: [VRFC 10-3180] cannot find port 'addr_rs2' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:38]
-ERROR: [VRFC 10-3180] cannot find port 'addr_rs1' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:37]
-ERROR: [VRFC 10-3180] cannot find port 'addr_rd' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:36]
-ERROR: [VRFC 10-3180] cannot find port 'WElfsr' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:35]
-ERROR: [VRFC 10-3180] cannot find port 'WEreg' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:34]
-ERROR: [VRFC 10-3180] cannot find port 'muxctrl' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:33]
-ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:29]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2458] undeclared symbol CLK, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:38]
-INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:41]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv:15]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_runs synth_1 -jobs 6
-[Fri May 30 14:35:48 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 13:58:53 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 14:36:49 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+[Tue Jun 10 13:59:53 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -767,340 +97,69 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 3876.586 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 2974.285 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 3876.586 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3876.586 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Fri May 30 14:42:21 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.351 . Memory (MB): peak = 2974.285 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 3077.379 ; gain = 127.820
 startgroup
-set_property package_pin "" [get_ports [list  {seg1[2]}]]
-place_ports {ALUbotones[3]} T18
+set_property package_pin "" [get_ports [list  {seg0[6]} {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports seg_sel U2
 endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list seg_sel]]
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
 startgroup
-set_property package_pin "" [get_ports [list  {seg1[4]}]]
-place_ports {ALUbotones[2]} W19
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
 endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {seg1[0]}]]
-place_ports {ALUbotones[1]} U18
-endgroup
-startgroup
-set_property package_pin "" [get_ports [list  {seg1[3]}]]
-place_ports {ALUbotones[0]} T17
-endgroup
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+place_ports seg_sel U2
+place_ports rst U17
+place_ports CambioModo R2
+place_ports clk1 W5
 place_ports {LEDs[0]} U16
 place_ports {LEDs[1]} E19
 place_ports {LEDs[2]} L1
 place_ports {LEDs[3]} P1
-place_ports {LEDs[4]} N3
-place_ports {LEDs[5]} P3
-place_ports clk1 W5
-place_ports CambioModo R2
 startgroup
-set_property package_pin "" [get_ports [list  {seg0[5]}]]
-place_ports rst V17
+set_property package_pin "" [get_ports [list  {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
+place_ports {LEDs[4]} N3
 endgroup
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-file mkdir C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new
-close [ open C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc w ]
-add_files -fileset constrs_1 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc
-set_property target_constrs_file C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/constrs_1/new/const.xdc [current_fileset -constrset]
-save_constraints -force
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2458] undeclared symbol CLK, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:38]
-INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:41]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=41,CLKIN...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
-Compiling module xil_defaultlib.clk_wiz_0
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 4684.930 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2458] undeclared symbol CLK, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:38]
-INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv:41]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=41,CLKIN...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
-Compiling module xil_defaultlib.clk_wiz_0
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 4684.930 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'E:/Vivado/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-54] Inspecting design source files for 'Top_TB' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj Top_TB_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Banco_Registros
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fsm_mealy
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Generator
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopFSM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module display
-INFO: [VRFC 10-311] analyzing module HEX
-INFO: [VRFC 10-311] analyzing module DIS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_TB
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-"xelab -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto eabd31bd93f9420790569f7ce51922da --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Top_TB_behav xil_defaultlib.Top_TB xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv" Line 1. Module TopFSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv" Line 1. Module fsm_mealy doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv" Line 4. Module Banco_Registros doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv" Line 3. Module Generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/ALU.sv" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 41. Module HEX doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv" Line 58. Module DIS doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.fsm_mealy
-Compiling module xil_defaultlib.Banco_Registros
-Compiling module xil_defaultlib.Generator
-Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.HEX
-Compiling module xil_defaultlib.DIS
-Compiling module xil_defaultlib.display
-Compiling module xil_defaultlib.TopFSM
-Compiling module xil_defaultlib.Top_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Top_TB_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Top_TB_behav -key {Behavioral:sim_1:Functional:Top_TB} -tclbatch {Top_TB.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source Top_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4684.930 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+place_ports {LEDs[5]} P3
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports seg_sel U2
+place_ports rst V17
+place_ports clk1 W5
+startgroup
+set_property package_pin "" [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports CambioModo R2
+endgroup
+place_ports {LEDs[5]} V3
+place_ports {LEDs[3]} P3
+place_ports {LEDs[2]} N3
+place_ports {LEDs[1]} P1
+place_ports {LEDs[0]} L1
 reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri May 30 15:24:11 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+save_constraints -force
 launch_runs impl_1 -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 15:24:53 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+[Tue Jun 10 14:15:52 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 14:15:52 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
 refresh_design
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1111,250 +170,54 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 4684.930 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 3431.512 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 4684.930 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4684.930 ; gain = 0.000
-place_ports {seg0[0]} U2
-place_ports {seg0[0]} T1
-place_ports {seg0[1]} U1
-place_ports {seg0[2]} W4
-place_ports {seg0[3]} V4
-place_ports {seg0[4]} U4
-place_ports {seg0[5]} V2
-place_ports {seg0[6]} U2
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 3431.512 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3431.512 ; gain = 17.031
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 14:18:41 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Jun 10 14:23:40 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 14:23:40 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 3850.898 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 3850.898 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3850.898 ; gain = 16.988
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 14:25:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property is_loc_fixed true [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
 save_constraints
 reset_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 15:28:18 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-set_property is_loc_fixed true [get_ports [list  {seg3[6]} {seg3[5]} {seg3[4]} {seg3[3]} {seg3[2]} {seg3[1]} {seg3[0]}]]
-set_property is_loc_fixed true [get_ports [list  {seg2[6]} {seg2[5]} {seg2[4]} {seg2[3]} {seg2[2]} {seg2[1]} {seg2[0]}]]
-set_property is_loc_fixed true [get_ports [list  {seg1[6]} {seg1[5]} {seg1[4]} {seg1[3]} {seg1[2]} {seg1[1]} {seg1[0]}]]
-save_constraints -force
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 15:31:15 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-set_property IOSTANDARD LVCMOS18 [get_ports [list {ALUbotones[3]} {ALUbotones[2]} {ALUbotones[1]} {ALUbotones[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg1[6]} {seg1[5]} {seg1[4]} {seg1[3]} {seg1[2]} {seg1[1]} {seg1[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg2[6]} {seg2[5]} {seg2[4]} {seg2[3]} {seg2[2]} {seg2[1]} {seg2[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg3[6]} {seg3[5]} {seg3[4]} {seg3[3]} {seg3[2]} {seg3[1]} {seg3[0]}]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list CambioModo]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list clk1]]
-set_property IOSTANDARD LVCMOS18 [get_ports [list rst]]
-save_constraints -force
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 15:36:16 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-refresh_design
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 6243.453 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 6243.453 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6243.453 ; gain = 0.000
+[Tue Jun 10 14:36:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-ERROR: [Labtools 27-3165] End of startup status: LOW
-program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 6243.453 ; gain = 0.000
-ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-disconnect_hw_server localhost:3121
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Fri May 30 15:44:47 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri May 30 15:50:43 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 15:51:33 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-close_hw
-refresh_design
-INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 6243.453 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 6243.453 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6243.453 ; gain = 0.000
-set_property IOSTANDARD LVCMOS18 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ALUbotones[3]} {ALUbotones[2]} {ALUbotones[1]} {ALUbotones[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list CambioModo]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list clk1]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.1
-  **** Build date : May 24 2019 at 15:13:31
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 6243.453 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw
-save_constraints
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 16:01:31 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.1
-  **** Build date : May 24 2019 at 15:13:31
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 6243.453 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-close_hw
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri May 30 16:07:44 2025] Launched synth_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Fri May 30 16:08:41 2025] Launched impl_1...
-Run output will be captured here: C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2019.1
-  **** Build date : May 24 2019 at 15:13:31
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 6243.453 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri May 30 16:16:21 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 14:44:56 2025...

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 10 13:41:26 2025
+# Process ID: 18940
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20172 C:\Users\oscar\OneDrive\Escritorio\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
+# Log file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:17 . Memory (MB): peak = 751.051 ; gain = 118.914
+update_compile_order -fileset sources_1eexit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 13:42:28 2025...
