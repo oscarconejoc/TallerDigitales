@@ -1,15 +1,14 @@
 //Oscar Conejo 2020234423
 
 module ALU (
-    input logic     [31:0]  data_in_1,
-    input logic     [31:0]  data_in_2,
-    input logic     [2:0]   func3,
-    input logic     [6:0]   func7,
-    input logic     [6:0]   opcode,
-    output logic    [31:0]  data_out,
-    //output logic            carry,
-    output logic            zero,
-    output logic            comparison
+    input logic     [31:0]      data_in_1,
+    input logic     [31:0]      data_in_2,
+    input logic     [2:0]       func3,
+    input logic     [6:0]       func7,
+    input logic     [6:0]       opcode,
+    output logic    [31:0]      data_out,
+    output logic                zero,
+    output logic                comparison
 );
 
     parameter ALI_OP    = 0010011;
