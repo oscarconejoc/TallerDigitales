@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../ALU.sv" \
+"../../../../../Adder.sv" \
+"../../../../../Banco_Registros.sv" \
+"../../../../../Control_Unit.sv" \
+"../../../../../Extensor.sv" \
+"../../../../../ID_IE.sv" \
+"../../../../../IE_IM.sv" \
+"../../../../../IF_ID.sv" \
+"../../../../../IM_IW.sv" \
+"../../../../../MUX_2.sv" \
+"../../../../../Memoria_datos.sv" \
+"../../../../../Program_Counter.sv" \
+"../../../../../cpu.sv" \
+"../../../../../memoria_instrucciones.sv" \
+"../../../../../cpu_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

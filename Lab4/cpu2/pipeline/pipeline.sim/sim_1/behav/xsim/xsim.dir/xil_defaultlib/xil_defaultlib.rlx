@@ -1,0 +1,20 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv,1750701685,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv,,alu,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv,1750701695,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv,,Adder;Full_Adder_1_bit,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv,1750701677,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv,,Register_bank,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv,1750701652,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv,,Control_Unit,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv,1750701729,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv,,Extend_Imm,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv,1750705205,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv,,ID_IE,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv,1750705399,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv,,IE_IM,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv,1750703489,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv,,IF_ID,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv,1750707695,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv,,IM_IW,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv,1750701724,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv,,MUX_2,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv,1750702264,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv,,data_memory,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv,1750701737,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv,,Program_Counter,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv,1750710277,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv,,cpu,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv,1750701167,systemVerilog,,,,cpu_tb,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv,1750700400,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv,,instrmem,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
