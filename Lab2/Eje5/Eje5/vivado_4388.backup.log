@@ -1,0 +1,223 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 10 13:42:31 2025
+# Process ID: 4388
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13348 C:\Users\oscar\OneDrive\Escritorio\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
+# Log file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 738.586 ; gain = 71.195
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Jun 10 13:43:56 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 13:43:56 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1674.414 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1674.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1674.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1812.859 ; gain = 1037.402
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 13:53:25 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1818.438 ; gain = 5.578
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Tue Jun 10 13:58:53 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Tue Jun 10 13:59:53 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.350 . Memory (MB): peak = 2974.285 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.351 . Memory (MB): peak = 2974.285 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 3077.379 ; gain = 127.820
+startgroup
+set_property package_pin "" [get_ports [list  {seg0[6]} {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports seg_sel U2
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list seg_sel]]
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+place_ports seg_sel U2
+place_ports rst U17
+place_ports CambioModo R2
+place_ports clk1 W5
+place_ports {LEDs[0]} U16
+place_ports {LEDs[1]} E19
+place_ports {LEDs[2]} L1
+place_ports {LEDs[3]} P1
+startgroup
+set_property package_pin "" [get_ports [list  {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
+place_ports {LEDs[4]} N3
+endgroup
+place_ports {LEDs[5]} P3
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports seg_sel U2
+place_ports rst V17
+place_ports clk1 W5
+startgroup
+set_property package_pin "" [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports CambioModo R2
+endgroup
+place_ports {LEDs[5]} V3
+place_ports {LEDs[3]} P3
+place_ports {LEDs[2]} N3
+place_ports {LEDs[1]} P1
+place_ports {LEDs[0]} L1
+reset_run synth_1
+save_constraints -force
+launch_runs impl_1 -jobs 6
+[Tue Jun 10 14:15:52 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 14:15:52 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 3431.512 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 3431.512 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3431.512 ; gain = 17.031
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 14:18:41 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Jun 10 14:23:40 2025] Launched synth_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/synth_1/runme.log
+[Tue Jun 10 14:23:40 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 3850.898 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 3850.898 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3850.898 ; gain = 16.988
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 14:25:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B1694FA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property is_loc_fixed true [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Jun 10 14:36:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 14:44:56 2025...

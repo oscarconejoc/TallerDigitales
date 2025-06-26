@@ -1,16 +1,16 @@
 //Lab 2 Ejercicio 4: Banco de Registros
 //Oscar Conejo
-
+//Registro parametrizable que se encarga de tomar un dato de entrada y almacenarlo en la direccion establecida. Ademas es capaz de leer y brindar datos en las direcciones solicitadas. 
 module Banco_Registros #(parameter N = 8, parameter W = 8)( //senales de entrada y salida del modulo
-    input  logic                  clk,
-    input  logic                  rst,
-    input  logic        [7:0]   addr_rs1,
-    input  logic        [7:0]   addr_rs2,
-    input  logic        [7:0]   addr_rd,
-    input  logic        [W-1:0]   data_in,
-    input  logic                  WE,
-    output logic        [W-1:0]   rs1,
-    output logic        [W-1:0]   rs2
+    input  logic                  clk,  //reloj
+    input  logic                  rst,  //reset 
+    input  logic        [7:0]   addr_rs1, //direccion del primer dato a leer
+    input  logic        [7:0]   addr_rs2, //direccion del segundo dato a leer
+    input  logic        [7:0]   addr_rd,  //direccion de escritura
+    input  logic        [W-1:0]   data_in, //dato de entrada
+    input  logic                  WE,      //Write enable
+    output logic        [W-1:0]   rs1,     //dato de lectura 1
+    output logic        [W-1:0]   rs2      //Dato de lectura 2
 
 );
     
@@ -28,10 +28,6 @@ module Banco_Registros #(parameter N = 8, parameter W = 8)( //senales de entrada
         end
     end
 
-    //Escritura secuencial del banco de registros
-//    always_ff @(posedge clk) begin
-//        if (WE == 1) mem[addr_rd] <= data_in;
-//    end
     
     //Lectura combinacional del banco de registro
     assign rs1 = (addr_rs1 == 0) ? 0 : mem[addr_rs1]; //Si la direccion es 0. brinda un valor de 0 en la lectura

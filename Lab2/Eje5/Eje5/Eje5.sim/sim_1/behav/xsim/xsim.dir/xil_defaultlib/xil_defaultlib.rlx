@@ -7,7 +7,7 @@ C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Banco_Registros.sv,1747595376,sys
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.sim/sim_1/behav/xsim/glbl.v,1747264296,verilog,,,,glbl,,,,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1748635778,verilog,,,,clk_wiz_0,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1748635778,verilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Eje5/Eje5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
-C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1748637303,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/FSM.sv,1750961288,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,,fsm_mealy,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/LFSR.sv,1748639692,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,,Generator,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Mux.sv,1748383315,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,,mux,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,
 C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/Top.sv,1748640156,systemVerilog,,C:/Users/XPC/Desktop/TallerDigitales/Lab2/Eje5/display.sv,,TopFSM,,,../../../../Eje5.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 10 13:42:31 2025
+# Process ID: 4388
+# Current directory: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13348 C:\Users\oscar\OneDrive\Escritorio\TallerDigitales\Lab2\Eje5\Eje5\Eje5.xpr
+# Log file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/vivado.log
+# Journal file: C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg0[6]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+startgroup
+set_property package_pin "" [get_ports [list  {seg0[6]} {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports seg_sel U2
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list seg_sel]]
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+place_ports seg_sel U2
+place_ports rst U17
+place_ports CambioModo R2
+place_ports clk1 W5
+place_ports {LEDs[0]} U16
+place_ports {LEDs[1]} E19
+place_ports {LEDs[2]} L1
+place_ports {LEDs[3]} P1
+startgroup
+set_property package_pin "" [get_ports [list  {seg0[6]} {seg0[5]} {seg0[4]} {seg0[3]} {seg0[2]} {seg0[1]} {seg0[0]}]]
+place_ports {LEDs[4]} N3
+endgroup
+place_ports {LEDs[5]} P3
+place_ports {seg0[0]} U7
+place_ports {seg0[1]} V5
+place_ports {seg0[2]} U5
+place_ports {seg0[3]} V8
+place_ports {seg0[5]} W6
+place_ports {seg0[6]} W7
+startgroup
+set_property package_pin "" [get_ports [list  CambioModo clk1 rst seg_sel]]
+place_ports {seg0[4]} U8
+endgroup
+place_ports seg_sel U2
+place_ports rst V17
+place_ports clk1 W5
+startgroup
+set_property package_pin "" [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+place_ports CambioModo R2
+endgroup
+place_ports {LEDs[5]} V3
+place_ports {LEDs[3]} P3
+place_ports {LEDs[2]} N3
+place_ports {LEDs[1]} P1
+place_ports {LEDs[0]} L1
+reset_run synth_1
+save_constraints -force
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property is_loc_fixed true [get_ports [list  {LEDs[5]} {LEDs[4]} {LEDs[3]} {LEDs[2]} {LEDs[1]} {LEDs[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oscar/OneDrive/Escritorio/TallerDigitales/Lab2/Eje5/Eje5/Eje5.runs/impl_1/TopFSM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
