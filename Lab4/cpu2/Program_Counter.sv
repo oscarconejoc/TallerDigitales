@@ -1,10 +1,10 @@
 //Modulo del program counter
 
-module Program_Counter (                //Señales: 
-    input logic                clk,           //Reloj
-    input logic                rst,           //Reset
-    input logic        [31:0]  PC_Next,       //PC de entrada
-    output logic [31:0]  PC_Out         //PC de salida   
+module Program_Counter (                         //Señales: 
+    input logic                clk,              //Reloj
+    input logic                rst,              //Reset
+    input logic        [31:0]  PC_Next,          //PC de entrada
+    output logic [31:0]  PC_Out                 //PC de salida   
 );
     //Lógica del módulo
     always_ff @(posedge clk) begin

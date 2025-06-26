@@ -19,40 +19,7 @@ module cpu_tb ();
         clk = 0;
         #20;
         rst = 0;
-
-        $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20 $display("%t: %h",$time,Result);
-        #20;
-        $finish;        
+      
     end
 
     initial begin

@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv,1750808013,systemVerilog,,,,cpu_tb,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/synth/func/xsim/cpu_tb_func_synth.v,1750808458,verilog,,,,ID_IE;IE_IM;IF_ID;IM_IW;MUX_2;Program_Counter;Register_bank;cpu;data_memory;glbl,,,,,,,,

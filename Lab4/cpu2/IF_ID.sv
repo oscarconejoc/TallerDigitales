@@ -9,7 +9,7 @@ module IF_ID (
     output  logic   [31:0]  InstrD
 );
 
-    always_ff @(posedge clk) begin 
+    always_ff @(negedge clk) begin 
         if (rst) begin
             PCD <= 32'b0;
             InstrD <= 32'b0;

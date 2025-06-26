@@ -28,7 +28,7 @@ module IE_IM (
     output  logic   [4:0]   RdM
 );
 
-    always_ff @(posedge clk) begin 
+    always_ff @(negedge clk) begin 
         if (rst) begin
             RegWriteM <= 1'b0;
             ResultSrcM <= 1'b0;

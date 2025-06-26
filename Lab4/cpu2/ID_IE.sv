@@ -35,7 +35,7 @@ module ID_IE (
     output  logic   [31:0]  ImmExtE
 );
 
-    always_ff @(posedge clk) begin 
+    always_ff @(negedge clk) begin 
         if (rst) begin
             RegWriteE <= 1'b0;
             ResultSrcE <= 1'b0;

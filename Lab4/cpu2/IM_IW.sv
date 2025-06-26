@@ -26,7 +26,7 @@ module IM_IW (
     output  logic   [4:0]   RdW
 );
 
-    always_ff @(posedge clk) begin 
+    always_ff @(negedge clk) begin 
         if (rst) begin
             RegWriteW <= 1'b0;
             ResultSrcW <= 1'b0;

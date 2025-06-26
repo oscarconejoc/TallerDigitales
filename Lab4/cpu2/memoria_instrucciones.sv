@@ -2,7 +2,7 @@
 
 module instrmem(
     input logic           [31:0] A,
-    output logic    [31:0] RD
+    output logic          [31:0] RD
 );
 
     always_comb begin 

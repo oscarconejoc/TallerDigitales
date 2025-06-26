@@ -11,7 +11,7 @@ module Register_bank(
 
 );
     //32 posiciones de memoria estatica 
-    logic [31:0] mem [32];
+    logic [31:0] mem[32];
 
     // Borrado sincronico del banco de registros
     always_ff @(posedge clk or posedge rst) begin
@@ -25,10 +25,6 @@ module Register_bank(
         end
     end
 
-    //Escritura secuencial del banco de registros
-    always_ff @(posedge clk) begin
-        if (WE3) mem[A3] <= WD3;
-    end
     
     //Lectura combinacional del banco de registro
     assign RD1 = (A1 == 0) ? 32'h00000000 : mem[A1];
