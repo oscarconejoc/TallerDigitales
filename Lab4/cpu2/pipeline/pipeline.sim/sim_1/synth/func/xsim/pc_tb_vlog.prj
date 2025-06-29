@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"pc_tb_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../../Program_Counter.sv" \
+"../../../../../pipeline.srcs/sim_1/new/PC_TB.v" \
+
+# Do not sort compile order
+nosort

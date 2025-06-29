@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,19 +29,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv
   C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv
-  C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv
   C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being

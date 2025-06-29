@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="cpu_tb_time_synth.wdb" id="1">
+      <db_ref path="cpu_tb_func_synth.wdb" id="1">
          <top_modules>
             <top_module name="cpu_tb" />
             <top_module name="glbl" />
@@ -12,14 +12,50 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="663231265fs"></ZoomEndTime>
-      <Cursor1Time time="17723000fs"></Cursor1Time>
+      <ZoomEndTime time="1429306791fs"></ZoomEndTime>
+      <Cursor1Time time="15085000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="140"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCNext_IBUF" type="array">
+      <obj_property name="ElementShortName">PCNext_IBUF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCNext_IBUF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/clk_IBUF_BUFG" type="logic">
+      <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/p_0_in" type="array">
+      <obj_property name="ElementShortName">p_0_in[22:22]</obj_property>
+      <obj_property name="ObjectShortName">p_0_in[22:22]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/rst_IBUF" type="logic">
+      <obj_property name="ElementShortName">rst_IBUF</obj_property>
+      <obj_property name="ObjectShortName">rst_IBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCF_OBUF" type="array">
+      <obj_property name="ElementShortName">PCF_OBUF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCF_OBUF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCNext_IBUF" type="array">
+      <obj_property name="ElementShortName">PCNext_IBUF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCNext_IBUF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/clk_IBUF_BUFG" type="logic">
+      <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/p_0_in" type="array">
+      <obj_property name="ElementShortName">p_0_in[22:22]</obj_property>
+      <obj_property name="ObjectShortName">p_0_in[22:22]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/rst_IBUF" type="logic">
+      <obj_property name="ElementShortName">rst_IBUF</obj_property>
+      <obj_property name="ObjectShortName">rst_IBUF</obj_property>
+   </wvobject>
    <wvobject fp_name="/cpu_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,5 +67,17 @@
    <wvobject fp_name="/cpu_tb/Result" type="array">
       <obj_property name="ElementShortName">Result[31:0]</obj_property>
       <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/InstrF" type="array">
+      <obj_property name="ElementShortName">InstrF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstrF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/PCNext" type="array">
+      <obj_property name="ElementShortName">PCNext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCNext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/PCPlus4" type="array">
+      <obj_property name="ElementShortName">PCPlus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCPlus4[31:0]</obj_property>
    </wvobject>
 </wave_config>

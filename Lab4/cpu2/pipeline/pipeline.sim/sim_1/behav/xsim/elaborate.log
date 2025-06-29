@@ -6,46 +6,6 @@ Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" Line 2. Module cpu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" Line 2. Module Control_Unit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" Line 3. Module instrmem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" Line 1. Module Register_bank doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" Line 3. Module data_memory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
@@ -80,48 +40,13 @@ WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
-INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv" Line 3. Module Program_Counter doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Control_Unit
-Compiling module xil_defaultlib.instrmem
-Compiling module xil_defaultlib.Register_bank
+Compiling module xil_defaultlib.MUX_2
 Compiling module xil_defaultlib.Full_Adder_1_bit
 Compiling module xil_defaultlib.Adder_default
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.data_memory
-Compiling module xil_defaultlib.MUX_2
-Compiling module xil_defaultlib.Extend_Imm
 Compiling module xil_defaultlib.Program_Counter
-Compiling module xil_defaultlib.IF_ID
-Compiling module xil_defaultlib.ID_IE
-Compiling module xil_defaultlib.IE_IM
-Compiling module xil_defaultlib.IM_IW
 Compiling module xil_defaultlib.cpu
 Compiling module xil_defaultlib.cpu_tb
 Compiling module xil_defaultlib.glbl

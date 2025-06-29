@@ -1,5 +1,7 @@
 //Modulo para la unidad de control
 module Control_Unit (
+    input logic                 clk,
+    input logic                 rst,
     input logic              funct7_bit_5,
     input logic              Zero,
     input logic        [6:0] op,
@@ -20,7 +22,7 @@ module Control_Unit (
     assign PC_Src = Zero && Branch;
 
     //Decodificador principal
-    always_comb begin
+    always_ff @(posedge clk) begin
         case (op)
             7'b0000011: begin   //Instrucción lw
                 Reg_Write   = 1'b1;
@@ -71,7 +73,7 @@ module Control_Unit (
     end
 
     //Decodificador para la ALU
-    always_comb begin
+    always_ff @(posedge clk) begin
         casez ( { ALU_Op , funct3 , op[5] , funct7_bit_5 } )
             7'b00?????: ALU_Control = 3'b000;       //Instrucción lw y sw   (add)
             7'b01?????: ALU_Control = 3'b001;       //Instrucción beq       (subtract)

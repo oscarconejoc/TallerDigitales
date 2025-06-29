@@ -12,7 +12,7 @@ module Program_Counter (                         //Señales:
             PC_Out <= PC_Next;
         end 
         else begin
-            PC_Out = 32'h00400000;  //Reset
+            PC_Out <= 32'h00400000;  //Reset
         end 
     end
     

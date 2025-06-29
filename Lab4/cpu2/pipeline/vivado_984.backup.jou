@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jun 24 16:51:08 2025
+# Process ID: 984
+# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21380 C:\Users\XPC\Desktop\TallerDigitales\Lab4\cpu2\pipeline\pipeline.xpr
+# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/vivado.log
+# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+close_sim
+close_design
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+close_sim
+close_design
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+save_wave_config {C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg}
+close_sim
+launch_simulation -mode post-synthesis -type timing
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+current_sim simulation_5
+save_wave_config {C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg}
+current_sim simulation_7
+save_wave_config {C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg}
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+current_sim simulation_7
+close_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+refresh_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+source cpu_tb.tcl
+close_sim
