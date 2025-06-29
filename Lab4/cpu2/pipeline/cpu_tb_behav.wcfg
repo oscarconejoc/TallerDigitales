@@ -12,45 +12,25 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1429306791fs"></ZoomEndTime>
+      <ZoomEndTime time="1000000000fs"></ZoomEndTime>
       <Cursor1Time time="15085000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <NameColumnWidth column_width="118"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
-   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCNext_IBUF" type="array">
-      <obj_property name="ElementShortName">PCNext_IBUF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PCNext_IBUF[31:0]</obj_property>
-   </wvobject>
+   <WVObjectSize size="21" />
    <wvobject fp_name="/cpu_tb/cpu_1/pc/clk_IBUF_BUFG" type="logic">
       <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
       <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cpu_tb/cpu_1/pc/p_0_in" type="array">
-      <obj_property name="ElementShortName">p_0_in[22:22]</obj_property>
-      <obj_property name="ObjectShortName">p_0_in[22:22]</obj_property>
    </wvobject>
    <wvobject fp_name="/cpu_tb/cpu_1/pc/rst_IBUF" type="logic">
       <obj_property name="ElementShortName">rst_IBUF</obj_property>
       <obj_property name="ObjectShortName">rst_IBUF</obj_property>
    </wvobject>
-   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCF_OBUF" type="array">
-      <obj_property name="ElementShortName">PCF_OBUF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PCF_OBUF[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCNext_IBUF" type="array">
-      <obj_property name="ElementShortName">PCNext_IBUF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PCNext_IBUF[31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/cpu_tb/cpu_1/pc/clk_IBUF_BUFG" type="logic">
       <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
       <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cpu_tb/cpu_1/pc/p_0_in" type="array">
-      <obj_property name="ElementShortName">p_0_in[22:22]</obj_property>
-      <obj_property name="ObjectShortName">p_0_in[22:22]</obj_property>
    </wvobject>
    <wvobject fp_name="/cpu_tb/cpu_1/pc/rst_IBUF" type="logic">
       <obj_property name="ElementShortName">rst_IBUF</obj_property>
@@ -68,16 +48,60 @@
       <obj_property name="ElementShortName">Result[31:0]</obj_property>
       <obj_property name="ObjectShortName">Result[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cpu_tb/InstrF" type="array">
-      <obj_property name="ElementShortName">InstrF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">InstrF[31:0]</obj_property>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/D" type="array">
+      <obj_property name="ElementShortName">D[15:0]</obj_property>
+      <obj_property name="ObjectShortName">D[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cpu_tb/PCNext" type="array">
-      <obj_property name="ElementShortName">PCNext[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PCNext[31:0]</obj_property>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/PCF" type="array">
+      <obj_property name="ElementShortName">PCF[27:0]</obj_property>
+      <obj_property name="ObjectShortName">PCF[27:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cpu_tb/PCPlus4" type="array">
-      <obj_property name="ElementShortName">PCPlus4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">PCPlus4[31:0]</obj_property>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\PC_Out_reg[22]_0 " type="array">
+      <obj_property name="ElementShortName">\PC_Out_reg[22]_0 [0:0]</obj_property>
+      <obj_property name="ObjectShortName">\PC_Out_reg[22]_0 [0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_2_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_2_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_2_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_3_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_3_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_3_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_4_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_4_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_4_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_5_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_5_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_5_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_6_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_6_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_6_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_7_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_7_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_7_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/\RD[30]_i_8_n_0 " type="logic">
+      <obj_property name="ElementShortName">\RD[30]_i_8_n_0 </obj_property>
+      <obj_property name="ObjectShortName">\RD[30]_i_8_n_0 </obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/S" type="array">
+      <obj_property name="ElementShortName">S[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/Sum" type="array">
+      <obj_property name="ElementShortName">Sum[29:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum[29:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/clk_IBUF_BUFG" type="logic">
+      <obj_property name="ElementShortName">clk_IBUF_BUFG</obj_property>
+      <obj_property name="ObjectShortName">clk_IBUF_BUFG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_1/pc/rst_IBUF" type="logic">
+      <obj_property name="ElementShortName">rst_IBUF</obj_property>
+      <obj_property name="ObjectShortName">rst_IBUF</obj_property>
    </wvobject>
 </wave_config>

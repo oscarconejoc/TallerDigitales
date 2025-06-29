@@ -2,5 +2,5 @@
 2019.1
 May 24 2019
 15:06:07
-C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv,1750702067,systemVerilog,,,,cpu_tb,,,,,,,,
-C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/synth/timing/xsim/cpu_tb_time_synth.v,1750806791,verilog,,,,ID_IE;IE_IM;IF_ID;IM_IW;MUX_2;Program_Counter;Register_bank;cpu;data_memory;glbl,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv,1751215786,systemVerilog,,,,cpu_tb,,,,,,,,
+C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/synth/timing/xsim/cpu_tb_time_synth.v,1751216874,verilog,,,,Adder;Control_Unit;ID_IE;IE_IM;IF_ID;IM_IW;MUX_2;Program_Counter;Register_bank;alu;cpu;data_memory;glbl;instrmem,,,,,,,,

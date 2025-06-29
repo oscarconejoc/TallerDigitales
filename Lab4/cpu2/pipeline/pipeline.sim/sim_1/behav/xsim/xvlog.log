@@ -1,11 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-311] analyzing module Full_Adder_1_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Imm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_IE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IE_IM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_IW
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MUX_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Program_Counter
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instrmem
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_tb

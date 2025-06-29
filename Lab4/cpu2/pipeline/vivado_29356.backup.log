@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun 27 13:32:54 2025
+# Process ID: 29356
+# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9240 C:\Users\XPC\Desktop\TallerDigitales\Lab4\cpu2\pipeline\pipeline.xpr
+# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/vivado.log
+# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/synth/func/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 13:39:26 2025...

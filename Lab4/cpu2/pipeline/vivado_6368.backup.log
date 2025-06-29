@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun 29 10:44:12 2025
+# Process ID: 6368
+# Current directory: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26116 C:\Users\XPC\Desktop\TallerDigitales\Lab4\cpu2\pipeline\pipeline.xpr
+# Log file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/vivado.log
+# Journal file: C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Full_Adder_1_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Imm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_IE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IE_IM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_IW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instrmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xelab -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" Line 2. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" Line 2. Module Control_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" Line 3. Module instrmem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" Line 1. Module Register_bank doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" Line 3. Module data_memory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" Line 3. Module MUX_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 3. Module Adder_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" Line 43. Module Full_Adder_1_bit doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Control_Unit
+Compiling module xil_defaultlib.instrmem
+Compiling module xil_defaultlib.Register_bank
+Compiling module xil_defaultlib.Full_Adder_1_bit
+Compiling module xil_defaultlib.Adder_default
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.MUX_2
+Compiling module xil_defaultlib.Extend_Imm
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ID_IE
+Compiling module xil_defaultlib.IE_IM
+Compiling module xil_defaultlib.IM_IW
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 29 10:50:07 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 740.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -view {C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/cpu_tb_behav.wcfg
+WARNING: Simulation object /cpu_tb/cpu_1/pc/PCNext_IBUF was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/clk_IBUF_BUFG was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/p_0_in was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/rst_IBUF was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/PCF_OBUF was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/PCNext_IBUF was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/clk_IBUF_BUFG was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/p_0_in was not found in the design.
+WARNING: Simulation object /cpu_tb/cpu_1/pc/rst_IBUF was not found in the design.
+WARNING: Simulation object /cpu_tb/InstrF was not found in the design.
+WARNING: Simulation object /cpu_tb/PCNext was not found in the design.
+WARNING: Simulation object /cpu_tb/PCPlus4 was not found in the design.
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 741.539 ; gain = 0.598
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Imm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_IE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IE_IM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_IW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instrmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xelab -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'Cout' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv:74]
+ERROR: [VRFC 10-3180] cannot find port 'Cin' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv:72]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Banco_Registros.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Control_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Extensor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Imm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ID_IE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_IE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IE_IM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IE_IM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IF_ID.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/IM_IW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM_IW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/MUX_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Memoria_datos.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/Program_Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/memoria_instrucciones.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instrmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/cpu_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim'
+"xelab -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b493a55b3d434716a8632aae73b64cea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'Cout' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv:74]
+ERROR: [VRFC 10-3180] cannot find port 'Cin' on this module [C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/ALU.sv:72]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 29 10:54:04 2025...
