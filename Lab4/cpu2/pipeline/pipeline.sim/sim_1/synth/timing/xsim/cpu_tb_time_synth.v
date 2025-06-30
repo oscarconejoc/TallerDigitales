@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sun Jun 29 11:07:54 2025
+// Date        : Mon Jun 30 11:17:34 2025
 // Host        : DESKTOP-H2BA1LP running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/Users/XPC/Desktop/TallerDigitales/Lab4/cpu2/pipeline/pipeline.sim/sim_1/synth/timing/xsim/cpu_tb_time_synth.v
